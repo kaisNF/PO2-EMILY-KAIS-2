@@ -5,10 +5,15 @@ font-family: "helvetica";
 box-sizing: border-box;
 }
 
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
 header h1{ 
   font-size: 2.5rem;
   color: #5760d3;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: myfont;
   padding-top:4rem;
   font-weight:bold;
   text-align: center;
@@ -348,7 +353,7 @@ color:#5760d3;
 
 /*styling for the assembling brand parts - fonts*/
 .Font h2{
-font-family: 'Times New Roman', Times, serif;
+font-family: myfont;
 font-size:5rem;
 color: black;
 }
