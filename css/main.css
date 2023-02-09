@@ -106,6 +106,8 @@ body {
 
 /*hover state for image links*/
 a:hover img{
+  transition-property: opacity; 
+  transition-duration: 0.5s;
   opacity: 50%
 }
 
