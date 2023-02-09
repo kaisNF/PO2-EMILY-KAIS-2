@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <title>P01: AUXILIARY'S TUTORING CENTER</title> 
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01: AUXILIARY'S TUTORING CENTER</h1> <!--first level of heading-->
+
+    </header>
+    
+    
+        <nav>        <!--Navigation Links-->
+
+          <a href = "#purpose">ABOUT US</a>
+          <a href = "#services">SERVICES</a>
+          <a href="product_listing.html">PRODUCT LISTING</a>
+          <a href="checkout.html">CHECKOUT</a>
+        </nav>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">  <!--I've kept the element classes to separate the material from another-->
+        <h3>In-text link</h3> <!--learned from prof. Andrew Hawryshkewich in IAT 235-->
+      <div class = "In-Text_Link">
+        <a href = "#purpose">ABOUT US</a>
+        <a href = "#services">SERVICES</a>
+
+        <a href="product_listing.html">PRODUCT LISTING</a>
+        <a href="checkout.html">CHECKOUT</a>
+      </div>
+
+
+      <h3>Sample Code</h3>
+      <code>&lt;div class = "In-Text_Link"&lt;/a&gt;</code>
+        <code>&lt;a href = "#purpose">ABOUT US&lt;/a&gt;</code>
+          <code>&lt;a href = "#services">SERVICE&lt;/a&gt;</code>
+  
+          <code>&lt;a href="product_listing.html">PRODUCT LISTING&lt;/a&gt;</code>
+          <code>&lt;a href="checkout.html">CHECKOUT&lt;/a&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+
+      </section>
+
+
+      <!--
+   Default Button styling section 
+  <section class="element">
+
+    <h3>Navigation Link</h3>
+
+    <h4>CSS selector:</h4>
+    <p>.button-nav</p>
+
+    <h4>Sample code:</h4>
+    <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+    <h4>Rendered element:</h4>
+    <a class="button-nav" href="#">Default Button</a>
+  </section>
+
+-->
+
+<section class = "element">
+<h3>Text Input Field with Labels</h3>
+
+   <!--Text Input Field with Labels-->
+   <form>  
+  <fieldset class = "customer-info">
+  <label for = "firstName"> First name:</label>
+  <input type = "text" id = firstName name = "users_firstName">
+<label for = "lastName">Last name:</label>
+  <input type = "text" id = lastName name = "users_lastName">
+  <label for = "streetAddress"> Street Address:</label>
+  <input type = "text" id = streetAddress name = "users_Address">
+  <label for = "city"> City:</label>
+  <input type = "text" id = city name = "users_City">
+  <label for = "province"> Province: </label>
+  <input type = "text" id = province name = "users_Province">
+  <label for = "postalCode"> Postal Code: </label>
+  <input type = "text" id = postalCode name = "users_PostalCode">
+  <label for = "cellPhone"> Cell Phone: </label>
+  <input type = "text" id = cellPhone name = "users_cellPhone">
+
+   </fieldset>
+   </form>
+
+
+<h3>Sample Code</h3>
+<code>&lt;form&gt;</code>
+<code>&lt;fieldset class = "customer-info"&gt;</code>
+<code>&lt;label for = "firstName"> First name:&lt;/label&gt;</code>
+<code>&lt;input type = "text" id = firstName name = "users_firstName"&gt;</code>
+<code>&lt;label for = "lastName">Last name:&lt;/label&gt;</code>
+<code>&lt;input type = "text" id = lastName name = "users_lastName"&gt;</code>
+<code>&lt;label for = "streetAddress"> Street Address:&lt;/label&gt;</code>
+<code>&lt;input type = "text" id = streetAddress name = "users_Address"&gt;</code>
+<code>&lt;label for = "city"> City:&lt;/label&gt;</code>
+<code>&lt;input type = "text" id = city name = "users_City"&gt;</code>
+<code>&lt;label for = "province"> Province: &lt;/label&gt;</code>
+<code>&lt;input type = "text" id = province name = "users_Province"&gt;</code>
+<code>&lt;label for = "postalCode"> Postal Code: &lt;/label&gt;</code>
+<code>&lt;input type = "text" id = postalCode name = "users_PostalCode"&gt;</code>
+<code>&lt;label for = "cellPhone"> Cell Phone: &lt;/label&gt;</code>
+<code>&lt;input type = "text" id = cellPhone name = "users_cellPhone"&gt;</code>
+
+  <code>&lt;fieldset&gt;</code>
+  <code>&lt;/form&gt;</code>
+
+</section>
+
+
+      <!--Reset/Submit Buttons-->
+      <section class="element"> 
+
+        <h3>Submit and Reset Button</h3>
+        <div class = "Submit-Reset-Buttons">
+        
+        <form>
+          
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+        </form>
+      </div>
+
+
+      <h3>Sample Code</h3>
+      <code>&lt;div class  = "Submit-Reset-Buttons"&gt;</code>
+      <code>&lt;form&gt;</code>
+      <code>&lt;button type="submit" value="Submit">Submit&lt;/button&gt;</code>
+        <code>&lt;button type="reset" value="Reset">Reset&lt;/button&gt;</code>
+        <code>&lt;/form&gt;</code>
+      
+        </section>
+
+
+  <!--Radio Button input field and a label-->
+  <section class = "element">
+  <div class="Radio-Button">
+    <h3>Radio Button with Label</h3>
+ 
+   <form>
+    <h4> Payment Plans</h4>
+     <input type = "radio" id = "monthly" name = "pref_Payment" value = "MONTHLY">
+     <label for = "monthly">Monthly (with no interest)</label>
+     <input type = radio id = "annually" name = "pref_Payment" value = "ANNUALLY">
+     <label for = "annually">Annually</label>
+   </form>
+  </div>
+
+
+  <h3>Sample Code</h3>
+  <code>&lt;div class  = "Radio-Button"&gt;</code>
+  <code>&lt;form&gt;</code>
+  <code>&lt;h4> Payment Plans&lt;/h4&gt;</code>
+  <code>&lt;input type = "radio" id = "monthly" name = "pref_Payment" value = "MONTHLY"&gt;</code>
+  <code>&lt;label for = "monthly">Monthly (with no interest)&lt;/label&gt;</code>
+  <code>&lt;input type = radio id = "annually" name = "pref_Payment" value = "ANNUALLY"&gt;</code>
+  <code>&lt;label for = "annually">Annually&lt;/label&gt;</code>
+    <code>&lt;/form&gt;</code>
+    <code>&lt;/div&gt;</code>
+
+</section>
+
+  <!--Image as a Link-->
+  <section class="element">
+    <h3>Image as a Link</h3>
+
+    <a href = "#Math"> <!--https://play.google.com/store/apps/details?id=io.brodystud.pororo.math&hl=en&gl=US-->
+      <img src = "MathImage.jpg" alt = "image of the math classroom in Auxiliary">  
+    </a>
+
+    <a href = "#English"> <!--https://play.google.com/store/apps/details?id=io.brodystud.pororo.math&hl=en&gl=US-->
+      <img src = "EnglishImage.jpg" alt = "image of a girl in a classroom smiling and raising her hand ">
+    </a>
+
+<h3>Sample Code</h3>
+<code>&lt;a href = "#Math"&gt;</code> <!--https://play.google.com/store/apps/details?id=io.brodystud.pororo.math&hl=en&gl=US-->
+  <code>&lt;img src = "MathImage.jpg" alt = "image of the math classroom in Auxiliary"&gt;</code>  
+  <code>&lt;/a&gt;</code>
+
+<code>&lt;a href = "#English"&gt;</code> <!--https://play.google.com/store/apps/details?id=io.brodystud.pororo.math&hl=en&gl=US-->
+  <code>&lt;img src = "EnglishImage.jpg" alt = "image of a girl in a classroom smiling and raising her hand "&gt;</code>
+  <code>&lt;/a&gt;</code>
+
+  </section>
+
+
+
+
+  </section>
+
+    <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+<section class = "element">
+  
+  <h3>Headings</h3>
+
+  <h2>Purpose</h2>
+
+
+  <h2>Subjects Currently Taught Available</h2>
+
+  <h3>English</h3> <!--third level of heading-->
+
+  <h4>Reading Comprehension</h4> <!--fourth level of heading-->
+  <h4>Writing Comprehension</h4>
+
+  <h3>Math</h3>
+
+  <h4>Adding</h4> <!--fourth level of heading-->
+  <h4>Subtracting</h4>
+
+
+
+<h3>Sample Text</h3>
+
+<code>&lt;h1>P01:Auxiliary's Tutoring Center&lt;/h2&gt;</code>
+
+<code>&lt;h2>Purpose&lt;/h2&gt;</code>
+
+
+  
+<code>&lt;h2>Subjects Currently Taught Available&lt;/h2&gt;</code>
+
+  
+<code>&lt;h3>English&lt;/h3&gt;</code><!--third level of heading-->
+
+  
+<code>&lt;h4>Reading Comprehension&lt;/h4&gt;</code><!--fourth level of heading-->
+  
+<code>&lt;h4>Writing Comprehension&lt;/h4&gt;</code>
+
+  
+<code>&lt;h3>Math&lt;/h3&gt;</code>
+
+  
+<code>&lt;h4>Adding&lt;/h4&gt;</code> <!--fourth level of heading-->
+  
+<code>&lt;h4>Subtracting&lt;/h4&gt;</code>
+
+
+</section>
+
+<section class="element">
+  <h3>Paragraphs</h3> <!--This was also taught to me in IAT 235 from prof. Andrew Hawryshkewich-->
+<!--this is for the English Description-->
+  <p> At Auxiliary, we teach English under two distinct categories. Learning English is one of the most fundamentally used languages in the world, and so 
+    we can help by incorporating reading and writing methods into your child's life. </p>
+<!--this is for the Math Description-->
+  <p>Math can be difficult, but with Auxiliary, we make it easier. With curated study guides to better help learning
+    comphrehension, learning arithmitic operations has never been easier. We begin by sorting out these functions into its most basic form; adding, subtracting, multiplying, and dividing. Then we
+    incorporate study methods that aren't limited to just studying, but we apply these methods into real-world scenarios for them to experience the relevancy of these studies.
+  
+  </p>
+
+<h3>Sample Code</h3>
+<code>&lt;p> At Auxiliary, we teach English under two distinct categories. Learning English is one of the most fundamentally used languages in the world, and so 
+  we can help by incorporating reading and writing methods into your child's life.&lt;/p&gt;</code>
+
+  <code>&lt;p>Math can be difficult, but with Auxiliary, we make it easier. With curated study guides to better help learning
+  comphrehension, learning arithmitic operations has never been easier. We begin by sorting out these functions into its most basic form; adding, subtracting, multiplying, and dividing. Then we
+  incorporate study methods that aren't limited to just studying, but we apply these methods into real-world scenarios for them to experience the relevancy of these studies.
+
+&lt;/p&gt;</code>
+
+</section>
+
+
+<section class="element">
+<h3>Numbered Lists</h3>
+<H2>Current Grades taught</h2>
+
+<ol>
+  <li>Kindergarten</li>
+  <li>Grade 1</li>
+  <li>Grade 2</li>
+  <li>Grade 3</li>
+  <li>Grade 4</li>
+  <li>Grade 5</li>
+</ol>
+
+<h3>Sample Text</h3>
+<code>&lt;ol&gt;</code>
+  <code>&lt;li>Kindergarten&lt;/li&gt;</code>
+
+  <code>&lt;li>Grade 1&lt;/li&gt;</code>
+  <code>&lt;li>Grade 2&lt;/li&gt;</code>
+  <code>&lt;li>Grade 3&lt;/li&gt;</code>
+  <code>&lt;li>Grade 4&lt;/li&gt;</code>
+  <code>&lt;li>Grade 5&lt;/li&gt;</code>
+  <code>&lt;/ol&gt;</code>
+
+  </section>
+</section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element"> <!--See in Interaction Elements and select the service-->
+       <h3>Services</h3>
+
+        <section id = "purpose"> <!--note this will not be in the product-listing area but i had no other place to put it
+        and I had made an about us section so i thought i'd just add this part in-->
+
+        <h2>Purpose</h2> <!--second level of heading-->
+          <p>Aims to help children from the ages 4-8 to assist them in their learning progress. 
+          With flexible payment plans, Auxiliary hopes to provide an inclusive environment where students can learn 
+          and understand with fellow peers. Adults can additionally sit through the 
+          first few classes for a peace of mind when it comes to their children in this day center.</p>
+        </section>
+
+        <section id = "services">
+<h2>Subjects Currently Taught Available</h2> <!--second level of heading-->
+
+
+
+<div class = "container">
+  <div class = "block">
+    <section id = "English">
+  
+  <h3>English</h3> <!--third level of heading-->
+
+  <a href = "#English"> <!--https://play.google.com/store/apps/details?id=io.brodystud.pororo.math&hl=en&gl=US-->
+    <img src = "EnglishImage.jpg" alt = "image of a girl in a classroom smiling and raising her hand ">
+  </a>
+
+  <p> At Auxiliary, we teach English under two distinct categories. English is one of the most fundamentally used languages in the world, and so 
+  we can help by incorporating reading and writing methods into your child's life.  </p>
+    </section>
+  </div>
+
+
+  <div class = "block">
+    <section id = "Math">
+  <h3>Math</h3>
+
+  <a href = "#Math"> <!--https://play.google.com/store/apps/details?id=io.brodystud.pororo.math&hl=en&gl=US-->
+    <img src = "MathImage.jpg" alt = "image of the math classroom in Auxiliary">  
+  </a>
+
+  <p> Math can be difficult, but with Auxiliary, we make it easier. With curated study guides to better help learning
+  comphrehension, learning arithmitic operations has never been easier. We begin by sorting out these functions into its most basic form; adding, subtracting, multiplying, and dividing. Then we
+  incorporate study methods that aren't limited to just studying, but we apply these methods into real-world scenarios for them to experience the relevancy of these studies.
+  </p>
+    </section>
+  </div>
+</div>
+
+</section>
+      </section>
+
+      <section class="element"> <!--Top of the hope page-->
+        <h3>Main Navigation</h3>
+<nav>
+  <a href = "#math">LEARN MORE ABOUT MATH</a>
+  <a href = "#english">LEARN MORE ABOUT ENGLISH</a>
+  <a href="product_listing.html">PRODUCT LISTING</a>
+  <a href="checkout.html">CHECKOUT</a>
+      </nav>
+
+      </section>
+
+      <section class="element"> <!-- organized at the top under text inputs and labels-->
+        <h3>Payment Form</h3>
+
+        <!--Text Input Field with Labels-->
+        <form>  
+        <fieldset class = "customer-info">
+        <h3>Customer Info</h3>
+        <label for = "fName"> First name:</label>
+        <input type = "text" id = fName name = "users_fName">
+        <label for = "lName">Last name:</label>
+        <input type = "text" id = lName name = "users_lName">
+        <label for = "streetAddr"> Street Address:</label>
+        <input type = "text" id = streetAddr name = "users_Addr">
+        <label for = "ct"> City:</label>
+        <input type = "text" id = ct name = "users_Ct">
+        <label for = "prov"> Province: </label>
+        <input type = "text" id = prov name = "users_Prov">
+        <label for = "postCode"> Postal Code: </label>
+        <input type = "text" id = postCode name = "users_PostCode">
+        <label for = "number"> Cell Phone: </label>
+        <input type = "text" id = number name = "users_number">
+      </fieldset>
+
+        <!--Payment Options-->
+
+      <section class="payment-options">
+      <h3>Payment Options</h3>
+      <input type = "radio" id = "month" name = "pref_Payment" value = "MONTHLY">
+      <label for = "monthly">Monthly (with no interest)</label>
+      <input type = radio id = "annual" name = "pref_Payment" value = "ANNUALLY">
+      <label for = "annually">Annually</label>
+      </section>
+
+         <!--Submit and Reset-->
+      <div class = "Submit-Reset-option">
+      <input type = "submit" value = "Submit">
+      <input type = "reset" value = "Reset">
+      </div>
+
+      </form>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>  <!--https://www.w3schools.com/howto/howto_css_checkout_form.asp - drew reference to learn how to create a checkout cart-->
+        
+  <div class = "check-out-Cart">
+        <h3 >Checkout</h3>
+
+        <div class = "item-1">
+        <p><a href ="#English"> Reading Comprehension</a>
+        <span class ="price">$49.99</span></p>
+        </div>
+
+        <div class = "item-2">
+        <p><a href="#Math">Beginners Math Course</a> <span class="price">$52.00</span></p>
+       <hr>
+        <p>Total<span class = " price"> $101.99</span></p>
+        </div>
+</div>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="citations">
+      <div class = "cite">
+      <h2>Citations</h2>
+      <ul>
+        <li>Carter Matthew. Designer. 1996. <strong>Verdana [Font]</strong>. Retrieved from <a href="https://learn.microsoft.com/en-us/typography/font-list/verdana-ref">https://learn.microsoft.com/en-us/typography/font-list/verdana-ref</a>.</li>
+        <li>Gordon Chloe. Article. 2021. <strong>cerealBranding.png [img]</strong>. Retrieved from <a href="https://thedieline.com/blog/2021/11/23/offlimits-news-innovative-cereal-box-design?">https://thedieline.com/blog/2021/11/23/offlimits-news-innovative-cereal-box-design?</a>.</li>
+        <li>Maclean, Flora. Designer. 2021. <strong>CerealBox.png [img]</strong>. Retrieved from <a href="https://mailchimp.com/courier/article/cereal/">https://mailchimp.com/courier/article/cereal/</a></li>
+        <li>Miedinger Max. Designer. 1957. <strong>Helvetica [Font]</strong>.Retrieved from <a href="https://fontsinuse.com/typefaces/44/helvetica">https://fontsinuse.com/typefaces/44/helvetica</a>.</li>
+        <li>Morison, Stanley. Designer. 2011. <strong>Times New Roman [Font]</strong>. Retrieved from <a href="https://learn.microsoft.com/en-us/typography/font-list/times-new-roman">https://learn.microsoft.com/en-us/typography/font-list/times-new-roman</a></li>
+        <li>Madigan, Adam. & Barrett Bob. 2019. <strong>MathImage.JPG[img]</strong>. Retrieved from <a href = "https://architectureau.com/articles/winners-revealed-2019-dulux-colour-awards/">https://architectureau.com/articles/winners-revealed-2019-dulux-colour-awards/</a></li>
+        <li>ESL Teaching Certification. n.d.. <strong>EnglishImage.JPG[img]</strong>. Retrieved from <a href = "https://teaching-certification.com/esl-certification/">https://teaching-certification.com/esl-certification/</a></li>
+      </ul>
+    </div>
+    </section>
+
+    </section>
+
+<!--Assembling Brand Components -->
+
+<section class = "element">
+  <h2>Assembling Brand Components</h2>
+
+  <h3>Fonts</h3>
+ <div class = "Font">
+
+<h2>Times New Roman</h2>
+<p>This is used for the first level of headings. Readability is often a concern that is tied to serif fonts, 
+  but as it is only used for the heading and is visibility larger than the rest of the elements, readability wouldn't be as much as a concern versus if it had been used for the paragraph elements. I decided to utilize New Times Roman Font, because
+  it would add more of a professional perspective of the company and ensure it makes the parents feel like they have brought their children to a dependable tutoring center.
+</p>
+
+<h3>Verdana</h3>
+
+<p>For larger elements that are not a part of the header, I decided to use a sans-serif Font, Verdana. I thought Verdana would be appropriate because
+  it contrasts well with the serif font used for the header. It does not take the attention away from the company's name, 
+  but additionally makes it more playful, allowing the page to be overall, more coordinated with the rest of the content from the page.
+</p>
+
+<h3>Helvetica</h3>
+<p>Helvetica is used for the elements that require the user to read. I decided to Helvetica after doing some reasearch, and I found out it is considered to 
+  be one of the most readable fonts. As a lot of my text is inquiring users of the services available at Auxiliary; I thought 
+  from a usability perspective, it would be more approporiate to use this typeface.
+</p>
+
+</div>
+</section>
+
+
+<section class = "element">
+<h3>Colour Palettes </h3>
+<img src = "Brown.png" alt = "brown shade used throughout the website">
+<img src = "lilac.png" alt = "lilac shade used throughout the website">
+<img src = "orange-pink.png" alt = "orange-pink shade used throughout the website">
+<img src = "white.png" alt = "white shade used throughout the website">
+
+<h3>Colours</h3>
+<p>Brown - #2d1c0b</p>
+<p>Lilac - #5760d3</p>
+<p>Orange-Pink - #e3afa6</p>
+<p>white - #fff</p>
+</section>
+
+<section class = "element">
+<h3>Potential imagery and/or art direction</h3>
+
+
+  <img src = "CerealBox.jpg" alt = " example image of branding for cereal companies that have incorporated playful typography, font, and mascots to appear on the front box">
+  <img src = "cerealBranding.png" alt = "another example image of branding for cereal companies; this one includes more pastel like colours but have the same idea of a playful typeface, font, and mascot appearing on the front box">
+
+
+
+
+
+<p>In this section, I struggled in developing an art direction
+  to be used for this company. A lot of times, parents want to ensure that their kids are having fun
+  at their young age while learning, but also, want someone who is able to discipline their kids
+  when appropriate. For this project, I found a lot of fun in developing both of these ideas to
+  enforce trust and reassurance to parents. For the Art Direction, I thought it would be fun to incorporate 
+  elements that are typically seen in Cereal Box Branding; From my perspective, a
+learning center concerns both the parent's and children's attitude, and so I thought it would be fun to implement elements where
+it caters towards more playful branding, but are just as dependable when it comes to adult consumership.
+
+</section>
+
+
+
+</body>
+</html>
