@@ -259,7 +259,7 @@ color:#5760d3;
 
 /**/
 
-/*styling for check out cart*/
+/* styling for check out cart
 .check-out-Cart {
   background-color:#eee;
   width:45rem;
@@ -289,6 +289,58 @@ color:#5760d3;
 
 .check-out-Cart a{
   color:#2d1c0b;
+} */
+
+/*--------- CHECKOUT SECTION CSS--------- */
+/* Source driven from https://www.youtube.com/watch?v=cce_70pxbqw&ab_channel=Mr.WebDesigner */
+.checkout_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background:  #d7988d;
+}
+
+.checkout_container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(230, 148, 77, 0.1);
+}
+
+.checkout_container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.checkout_container form .row .col{
+  flex:1 1 250px;
+}
+
+.checkout_container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.checkout_container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #1F1A38;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+
+.checkout_container form .submit-btn:hover{
+  background: #575fd3;
 }
 /**/
 
