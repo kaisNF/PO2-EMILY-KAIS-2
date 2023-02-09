@@ -19,3 +19,4 @@ bin-release/
 *.png
 *.jpg
 *.jpeg
+.DS_Store
