@@ -415,3 +415,88 @@ to make citations a bit cleaner
   font-size:1rem;
   color:#2d1c0b;
 }
+
+/* 
+  INPUT STYLING -------------------
+*/
+/* Source https://freefrontend.com/css-input-text/ */
+div.container {
+	display: flex;
+	align-items: flex-start;
+	justify-content:flex-start;
+	margin-top: 2rem;
+	border: 1rem solid #7b506f3e;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+h4.title {
+	text-align: center;
+	margin-bottom: 45px;
+}
+:root {
+	--color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--color-interaction: #7b506f;
+	--color-interaction-minus-two: rgba(4, 83, 201, 0.12);
+	--color-ink-high-contrast: #121212;
+
+	
+}
+div.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20rem;
+}
+
+/* Input and borders*/
+
+.input-underlined > input,
+.input-filled > input {
+	border: none;
+	border-bottom: 0.125rem solid var(--color-ink-medium-contrast);
+	width: 100%;
+	height: 2rem;
+	font-size: 1rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+	padding-bottom: 0.5rem;
+}
+
+.input-underlined > input:focus,
+.input-filled > input:focus {
+	outline: none;
+}
+
+.input-underlined > .input-label,
+.input-filled > .input-label {
+	position: absolute;
+	top: 0.9375rem;
+	left: 0.875rem;
+	line-height: 1%;
+	color: var(--color-ink-medium-contrast);
+	transition: top .2s;
+}
+
+/* Changes the color of the box when hovered over */
+.input-underlined > input:hover,
+.input-filled > input:hover {
+	background: var(--color-interaction-minus-two);
+	border-color: var(--color-ink-high-contrast);
+}
+/* Maked the label animate to the top and when written on it it will stay up*/
+.input-underlined > input:focus + .input-label,
+.input-underlined > input:valid + .input-label,
+.-input-filled > input:focus + .input-label,
+.input-filled > input:valid + .input-label {
+	top: 0;
+	font-size: 0.9375rem;
+	margin-bottom: 32px;;
+}
+/* Changing the color of the label when clicked */
+input:focus + .input-label {
+	color: var(--color-interaction);
+}
+/* Chaning the color of the underline when clicked */
+.input-underlined > input:focus{
+	border-color: var(--color-interaction);
+}
