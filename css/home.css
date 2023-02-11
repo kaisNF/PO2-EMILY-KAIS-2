@@ -57,4 +57,41 @@ a.active, a:hover{
     color: #E5989B;
     transition: .5s;
 }
+.welcome{
+    font-size: 5rem;
+    box-shadow: #6D6875;
+}
+#left{
+    width: 50%;
+    float:left;
+    padding-left: 10%;
+    padding-top: 5%;
+
+}
+#left h1{
+    font-style: bold;
+    text-shadow: 3px 3px #6d687567;
+    box-sizing: border-box;
+    padding-right: 33%;
+}
+#left p{
+    font-size: larger;
+    box-sizing: border-box;
+    padding-right: 33%;
+}
+#right{
+    display: flex;
+    width: 50%;
+    float: right;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#right img{
+    margin: 10% 20%;
+    height: 470px;
+    width: 470px;
+    border-radius: 50%;
+
+}
+
 
