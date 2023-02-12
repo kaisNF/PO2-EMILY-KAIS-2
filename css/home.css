@@ -60,6 +60,7 @@ a.active, a:hover{
 .welcome{
     font-size: 5rem;
     box-shadow: #6D6875;
+    margin-top: 0;
 }
 #left{
     width: 50%;
@@ -91,7 +92,29 @@ a.active, a:hover{
     height: 470px;
     width: 470px;
     border-radius: 50%;
-
+}
+#left .login{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#left .btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    display: box;
+    color: #fff;
+    background:#6D6875 ;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1 );
+    margin-bottom: 2rem;
 }
 
+#left .btn:hover{
+    background: #E5989B;
+    transition: .5s;
 
+}
