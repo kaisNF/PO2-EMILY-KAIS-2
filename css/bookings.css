@@ -1,8 +1,59 @@
-header h1{ 
-    font-size: 2.5rem;
-    color: #5760d3;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top:4rem;
-    font-weight:bold;
-    text-align: center;
-  }
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+
+
+body{
+  font-family: poppins;
+
+}
+
+.intro{
+  height: 100vh;
+  background-image: linear-gradient( #fff 60% , #E5989B);
+}
+nav{
+  background: #6D6875;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #fff;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  padding: 0 100px;
+  font-weight: bold;
+}
+#dot{
+  color: #E5989B;
+  font-size: 5rem;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 1rem;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 19px;
+}
+
+a.active, a:hover{
+  color: #E5989B;
+  transition: .5s;
+}
