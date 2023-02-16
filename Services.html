@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <title>Services</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services</title>
 
-    <link href="css/services.css" rel="stylesheet">
+  <link href="css/services.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header class="intro">
-      <nav>
-          <!-- <input type="checkbox" id="check"> ----TO FIX---- Responsive java logo issue 
+  <header class="intro">
+    <nav>
+      <!-- <input type="checkbox" id="check"> ----TO FIX---- Responsive java logo issue 
           <label for="check" class="checkbtn">
               <i class="fas fa-bars"></i>
           </label> -->
-          <label class="logo">Auxiliary<a id="dot">.</a></label>
-          <ul>
-              <li><a href ="home.html">Home</a></li>
-              <li><a  href ="AboutUs.html">About us</a></li>
-              <li><a class="active" href ="services.html">Services</a></li>
-              <li><a  href ="bookings.html">Bookings</a></li>
-              <li><a href ="index.html">Style Guide</a></li>
-          </ul>
-      </nav>
+      <label class="logo">Auxiliary<a id="dot">.</a></label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="AboutUs.html">About us</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="index.html">Style Guide</a></li>
+      </ul>
+    </nav>
 
-      
-      <a href = servicesViewing.html> 
-        <img src = "img/cerealBox.jpg" alt = "image of service product that covers learning math">
-      </a> 
-      <img src = "img/cerealBox.jpg" alt = "image of second service product that coovers learning english">    
-    </header>     
+    <section class="service-list">
+      <h1>Services List</h1>
+      <div class="service-container">
+        <div class="cart">
+          <div class="title">Math Class</div>
+          <div class="image"><a href=servicesViewing.html> <img src="img/MathImage.jpg"
+                alt="image of service product that covers learning math"></a></div>
+          <div class="text">Auxiliary's spacial math classes provide top notch aid for your children to excel in their
+            classes.</div>
+          <div>
+            <a href="servicesViewing.html"><button class="details">View more</button></a>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="title">English Class</div>
+          <div class="image"><a href=servicesViewing.html> <img src="img/EnglishImage.jpg"
+                alt="image of service product that covers learning math"></a></div>
+          <div class="text">Auxiliary's spacial english classes provide top notch aid for your children to excel in their
+            classes.</div>
+          <div>
+            <a href="servicesViewing.html"> <button class="details">View more</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
 
 </body>
+
 </html>

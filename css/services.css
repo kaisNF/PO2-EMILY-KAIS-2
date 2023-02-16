@@ -18,8 +18,8 @@ body{
 }
 
 .intro{
-  height: 100vh;
-  background-image: linear-gradient( #fff 60% , #E5989B);
+  height: 130vh;
+  background-image: linear-gradient( #fff , #E5989B);
 }
 nav{
   background: #6D6875;
@@ -56,4 +56,63 @@ nav ul li a{
 a.active, a:hover{
   color: #E5989B;
   transition: .5s;
+}
+
+.service-list h1{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  text-decoration: underline #E5989B;
+}
+.service-list{
+  padding: 3em;
+}
+.service-list .cart{
+  background-color:#fff;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 5px 10px 5px #6d68755c;
+  text-align: center;
+}
+.cart .title{
+  font-family: poppins;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-decoration: underline #E5989B;
+}
+.cart .text{
+  font-family: poppins;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 3rem;
+}
+.cart img{
+  border-radius: 1rem;
+}
+.cart img:hover{
+  transition: .5s;
+  opacity: 0.7;
+}
+.details{
+  font-size: 1rem;
+  color: #fff;
+  background-color:#6D6875;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.details:hover{
+  background: #E5989B;
+  transition: .5s;
+}
+.service-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
 }
