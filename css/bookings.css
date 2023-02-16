@@ -116,3 +116,7 @@ a.active, a:hover{
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
 }
+.responsive{
+  width: 70%;
+  height: auto;
+}
