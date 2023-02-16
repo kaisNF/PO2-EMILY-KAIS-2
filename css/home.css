@@ -38,6 +38,11 @@ label.logo{
     font-size: 5rem;
 }
 
+#Logodot    {
+    color: #E5989B;
+    font-size: 5rem;
+}
+
 nav ul{
     float: right;
     margin-right: 20px;
