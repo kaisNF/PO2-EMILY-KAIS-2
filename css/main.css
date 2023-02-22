@@ -565,7 +565,6 @@ table{
 .cart-info {
   display: flex;
   flex-wrap: wrap;
-
 }
 th{
   text-align: left;

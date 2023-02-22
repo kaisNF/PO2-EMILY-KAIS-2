@@ -1,174 +1,172 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>P01 - Auxiliary </title>
+<head>
+  <meta charset="utf-8">
+  <title>P01 - Auxiliary </title>
 
-    <link href="css/main.css" rel="stylesheet">
-  </head>
+  <link href="css/checkout.css" rel="stylesheet">
+  <!-- <link href="css/main.css" rel="stylesheet"> -->
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <h1>CHECKOUT PAGE</h1> <!--first level of heading-->
-</header>
-      <nav>    
-        <a href = "index.html">HOME</a>    
-        <a href="product_listing.html">PRODUCT LISTING</a>
-      </nav>
-      
-<!--
-      <section class="element"> 
-        <h3>Main Navigation</h3> 
-<nav>
-  <a href = "index.html">HOME</a>
-  <a href="product_listing.html">PRODUCT LISTING</a>
-      </nav>
-</section>
--->
-<section class="element">
-  <!--https://www.w3schools.com/howto/howto_css_checkout_form.asp - drew reference to learn how to create a checkout cart-->
-<h2 id="checkout-header">Checkout</h2>
-<div class="small-contianer cart-page">
-  <table>
-      <tr>
-        <th>Product</div></th>
-        <th>Quantity</th>
-        <th>Total</th>
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="img/MathImage.jpg" alt="an image of the Math class">
-            <div>
-              <p>Math class</p>
-              <small>Price: $58/hr</small>
-            </div>
-        </div>
-        </td>
-        <td> <input type="number" value="1"></td>
-        <td>$58/hr</td> 
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="img/EnglishImage.jpg" alt="an image of the MIDI Keybaord">
-            <div>
-              <p>English Class</p>
-              <small>Price: $55/hr</small>
-            </div>
-        </div>
-        </td>
-        <td> <input type="number" value="1"></td>
-        <td>$55/hr</td> 
-      </tr>
-  </table>
-  <div class="total-price">
+  <header class="intro">
+    <nav>
+      <label class="logo">Auxiliary<a id="dot">.</a></label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="AboutUs.html">About us</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="index.html">Style Guide</a></li>
+      </ul>
+    </nav>
+
+  <section class="element">
+    <!--https://www.w3schools.com/howto/howto_css_checkout_form.asp - drew reference to learn how to create a checkout cart-->
+    <h2 class="headline">Checkout</h2>
+    <div class="small-contianer cart-page">
       <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>$113.00</td>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <td>$13.56</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$126.56</td>
-          </tr>
+        <tr>
+          <th>Product
+    </div>
+    </th>
+    <th>Quantity</th>
+    <th>Total</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="img/MathImage.jpg" alt="an image of the Math class">
+          <div>
+            <p>Math class</p>
+            <small>Price: $58/hr</small>
+          </div>
+        </div>
+      </td>
+      <td> <input type="number" value="1"></td>
+      <td>$58/hr</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="img/EnglishImage.jpg" alt="an image of the MIDI Keybaord">
+          <div>
+            <p>English Class</p>
+            <small>Price: $55/hr</small>
+          </div>
+        </div>
+      </td>
+      <td> <input type="number" value="1"></td>
+      <td>$55/hr</td>
+    </tr>
+    </table>
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$113.00</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$13.56</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$126.56</td>
+        </tr>
       </table>
-  </div>
-</div>
-</section>
+    </div>
+    </div>
+  </section>
 
   <!--Text Input Field with Labels-->
-<section class="element">
-      <section>
-        <form>
-        </form>
-        <h2>Payment Form</h2>
-        <div class="checkout_container">
-          <form action="">
-            <div class="row">
-              <div class="col">
-                <h3 class="title">billing address</h3>
+  <section class="element">
+    <section>
+      <form>
+      </form>
+      <h2 class="headline">Payment Form</h2>
+      <div class="checkout_container">
+        <form action="">
+          <div class="row">
+            <div class="col">
+              <h3 class="title">billing address</h3>
+              <div class="input-group">
+                <label class="input-underlined">
+                  <input required>
+                  <span class="input-label">name</span>
+              </div>
+              <div class="input-group">
+                <label class="input-underlined">
+                  <input required>
+                  <span class="input-label">email</span>
+              </div>
+              <div class="input-group">
+                <label class="input-underlined">
+                  <input required>
+                  <span class="input-label">billing adresse</span>
+              </div>
+              <div class="input-group">
+                <label class="input-underlined">
+                  <input required>
+                  <span class="input-label">city</span>
+              </div>
+              <div class="flex">
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required>
-                    <span class="input-label">name</span>
+                    <span class="input-label">state</span>
                 </div>
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required>
-                    <span class="input-label">email</span>
-                </div>
-                <div class="input-group">
-                  <label class="input-underlined">
-                    <input required>
-                    <span class="input-label">billing adresse</span>
-                </div>
-                <div class="input-group">
-                  <label class="input-underlined">
-                    <input required>
-                    <span class="input-label">city</span>
-                </div>
-                <div class="flex">
-                  <div class="input-group">
-                    <label class="input-underlined">
-                      <input required>
-                      <span class="input-label">state</span>
-                  </div>
-                  <div class="input-group">
-                    <label class="input-underlined">
-                      <input required>
-                      <span class="input-label">zip code</span>
-                  </div>
+                    <span class="input-label">zip code</span>
                 </div>
               </div>
-              <div class="col">
-                <h3 class="title">payment</h3>
-                <div class="inputBox">
-                  <span>cards accepted :</span>
-                  <img src="img/card_img.png" alt="Picture of type of cards that the webiste accepts">
-                </div>
+            </div>
+            <div class="col">
+              <h3 class="title">payment</h3>
+              <div class="inputBox">
+                <span>cards accepted :</span>
+                <img src="img/card_img.png" alt="Picture of type of cards that the webiste accepts">
+              </div>
+              <div class="input-group">
+                <label class="input-underlined">
+                  <input required>
+                  <span class="input-label">cardholder</span>
+              </div>
+              <div class="input-group">
+                <label class="input-underlined">
+                  <input required type="password">
+                  <span class="input-label">credit card number</span>
+              </div>
+              <div class="input-group">
+                <label class="input-underlined">
+                  <input required>
+                  <span class="input-label">exp month</span>
+              </div>
+              <div class="flex">
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required>
-                    <span class="input-label">cardholder</span>
+                    <span class="input-label">exp year</span>
                 </div>
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required type="password">
-                    <span class="input-label">credit card number</span>
-                </div>
-                <div class="input-group">
-                  <label class="input-underlined">
-                    <input required>
-                    <span class="input-label">exp month</span>
-                </div>
-                <div class="flex">
-                  <div class="input-group">
-                    <label class="input-underlined">
-                      <input required>
-                      <span class="input-label">exp year</span>
-                  </div>
-                  <div class="input-group">
-                    <label class="input-underlined">
-                      <input required type="password">
-                      <span class="input-label">CVV </type></span>
-                  </div>
+                    <span class="input-label">CVV </type></span>
                 </div>
               </div>
             </div>
-            <input type="submit" value="proceed to checkout" class="submit-btn">
-          </form>
-        </div>
-      </section>
+          </div>
+          <input type="submit" value="proceed to checkout" class="submit-btn">
+        </form>
+      </div>
+    </section>
 
-  <!--Payment Options-->
-<!--
+    <!--Payment Options-->
+    <!--
 <section class="payment-options">
 <h3>Payment Options</h3>
 <input type = "radio" id = "monthly" name = "pref_Payment" value = "MONTHLY">
@@ -187,6 +185,6 @@
 </section>
 -->
 
-  </body>
-  </html>
-  
+</body>
+
+</html>

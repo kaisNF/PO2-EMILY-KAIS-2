@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: poppins;
+}
+
+.intro {
+  height: 130vh;
+  background-image: linear-gradient(#fff, #e5989b);
+}
+nav {
+  background: #6d6875;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  padding: 0 100px;
+  font-weight: bold;
+}
+#dot {
+  color: #e5989b;
+  font-size: 5rem;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 19px;
+}
+
+a.active,
+a:hover {
+  color: #e5989b;
+  transition: 0.5s;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+  background-color: rgb(255, 255, 255)
+}
+.cart-page {
+  margin-bottom: 80px;
+  margin-top: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background-color: #1f1a38;
+  font-weight: normal;
+}
+td {
+  padding: 10px 5px;
+  background-color: #fff;
+}
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a {
+  color: #7b506f;
+  font-size: 14px;
+  padding-top: 3rem;
+}
+td img {
+  width: 120px;
+  height: 110px;
+  margin-right: 10px;
+}
+h2 {
+  margin: 0;
+}
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table {
+  border-top: 3px solid #7b506f;
+  width: 30%;
+  /* max-width: 250px; */
+}
+
+/*--------- PAYMENT FORM CSS--------- */
+/* Source driven from https://www.youtube.com/watch?v=cce_70pxbqw&ab_channel=Mr.WebDesigner */
+.checkout_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: #1f1a38;
+}
+
+.checkout_container form {
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(230, 148, 77, 0.1);
+}
+
+.checkout_container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkout_container form .row .col {
+  flex: 1 1 250px;
+}
+
+.checkout_container form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.checkout_container form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #1f1a38;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.checkout_container form .submit-btn:hover {
+  background: #e5989b;
+}
+.headline{
+    text-align: center;
+    margin: 1rem;
+}
+
+
+/* ---------------INPUT STYLING -------------------*/
+/* Source https://freefrontend.com/css-input-text/ */
+div.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  border: 1rem solid #7b506f3e;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+h4.title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+:root {
+  --color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+  --color-interaction: #7b506f;
+  --color-interaction-minus-two: rgba(4, 83, 201, 0.12);
+  --color-ink-high-contrast: #121212;
+}
+div.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20rem;
+}
+
+/* Input and borders*/
+
+.input-underlined > input,
+.input-filled > input {
+  border: none;
+  border-bottom: 0.125rem solid var(--color-ink-medium-contrast);
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+}
+
+.input-underlined > input:focus,
+.input-filled > input:focus {
+  outline: none;
+}
+
+.input-underlined > .input-label,
+.input-filled > .input-label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.875rem;
+  line-height: 1%;
+  color: var(--color-ink-medium-contrast);
+  transition: top 0.2s;
+}
+
+/* Changes the color of the box when hovered over */
+.input-underlined > input:hover,
+.input-filled > input:hover {
+  background: var(--color-interaction-minus-two);
+  border-color: var(--color-ink-high-contrast);
+}
+/* Maked the label animate to the top and when written on it it will stay up*/
+.input-underlined > input:focus + .input-label,
+.input-underlined > input:valid + .input-label,
+.-input-filled > input:focus + .input-label,
+.input-filled > input:valid + .input-label {
+  top: 0;
+  font-size: 0.9375rem;
+  margin-bottom: 32px;
+}
+/* Changing the color of the label when clicked */
+input:focus + .input-label {
+  color: var(--color-interaction);
+}
+/* Chaning the color of the underline when clicked */
+.input-underlined > input:focus {
+  border-color: var(--color-interaction);
+}
