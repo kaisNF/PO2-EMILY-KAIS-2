@@ -132,9 +132,9 @@ a.active, a:hover{
 }
 .btn{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #fff;
-  background:#6D6875 ;
+  background:#6D6875;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
@@ -144,10 +144,9 @@ a.active, a:hover{
 }
 
 .btn:hover{
-  background: #E5989B;
+  background: #ffffff;
   transition: .5s;
 }
 .btn a{
   text-decoration: none;
-  color: #fff;
 }
