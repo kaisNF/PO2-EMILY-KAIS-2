@@ -111,12 +111,43 @@ a.active, a:hover{
   transition: .5s;
 }
 .service-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center ;
+  width: 100%;
 }
 .responsive{
-  width: 50%;
+  width: 70%;
   height: auto;
+}
+.service-container .cart{
+  position: relative;
+  width: 40rem;
+  padding: 4rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0,1);
+  border-radius: 2rem;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+.btn{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  background:#6D6875 ;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0,0.1 );
+}
+
+.btn:hover{
+  background: #E5989B;
+  transition: .5s;
+}
+.btn a{
+  text-decoration: none;
+  color: #fff;
 }
