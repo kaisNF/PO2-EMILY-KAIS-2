@@ -250,3 +250,10 @@ input:focus + .input-label {
 .input-underlined > input:focus {
   border-color: var(--color-interaction);
 }
+@media (max-width: 1030px){
+  nav ul li a{
+      color: #000000;
+      font-size: 19px;
+  }
+}
+
