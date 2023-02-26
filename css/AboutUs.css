@@ -100,9 +100,12 @@ a.active, a:hover{
 
 }
 @media (max-width: 1030px){
+  nav ul{
+    float: left;
+  }
   nav ul li a{
-      color: #000000;
-      font-size: 19px;
+    color: #000000;
+    font-size: 19px;
   }
 }
 
