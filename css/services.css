@@ -18,8 +18,9 @@ body{
 }
 
 .intro{
-  height: 130vh;
-  background-image: linear-gradient( #fff , #E5989B);
+  height: 20vh;
+  position: relative;
+  background-image: linear-gradient( #ffffff, #E5989B 70%);
 }
 nav{
   background: #6D6875;

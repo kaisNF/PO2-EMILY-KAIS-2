@@ -14,11 +14,10 @@
 
 body{
     font-family: poppins;
-
 }
 /* Ask the TA to put the background image in the footer */
 .intro{
-    height: 130vh; 
+    height: 100vh; 
     background-image: linear-gradient( #fff 60% , #E5989B);
 }
 nav{
@@ -87,6 +86,7 @@ a.active, a:hover{
 }
 #right{
     display: flex;
+    flex-wrap: wrap;
     width: 50%;
     float: right;
     margin: 0 auto;
@@ -105,7 +105,6 @@ a.active, a:hover{
 #left .btn{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    display: box;
     color: #fff;
     background:#6D6875 ;
     margin-bottom: 2rem;
@@ -117,7 +116,6 @@ a.active, a:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0,0.1 );
     margin-bottom: 2rem;
 }
-
 #left .btn:hover{
     background: #E5989B;
     transition: .5s;
@@ -125,4 +123,14 @@ a.active, a:hover{
 .responsive{
     width: 100%;
     height: auto;
+}
+.contianer{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 1030px){
+    nav ul li a{
+        color: #000000;
+        font-size: 19px;
+    }
 }
