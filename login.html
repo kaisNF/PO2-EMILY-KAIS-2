@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home page</title>
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" ></script> -->
     <!-- <link href="css/main.css" rel="stylesheet"> -->
 
@@ -37,9 +37,9 @@
             <br> <!-- Issue with margin to fix for now used the br -->
             <br>
             <div class="center">
-                <a href="signup.html" class="btn">Sign up</a><br>
+                <a href="#" class="btn" id="show-signup">Sign up</a><br>
                 <br>
-                <p>Already have an account? <a href="login.html" class="login">Log in here!</a></p>
+                <p>Already have an account? <a href="#" class="login" id="show-login">Log in here!</a></p>
             </div>
         </div>
         <div id="right">
@@ -80,7 +80,7 @@
         });
     </script> -->
     <div class="popup">
-        <div class="close-btn">&times;</div>
+        <div class="close-btn" href="home.html"> &times;</div>
         <div class="form">
             <h2>Log in</h2>
             <div class="input-group">
@@ -101,7 +101,7 @@
                 <button>Sign in</button>
             </div>
             <div class="form-element">
-                <a href="#">Forgot password?</a>
+                <a href="home.html">Forgot password?</a>
             </div>
         </div>
     </div>

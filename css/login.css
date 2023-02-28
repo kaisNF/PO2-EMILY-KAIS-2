@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+  }
+  
+  body {
+    font-family: poppins;
+  }
+  /* Ask the TA to put the background image in the footer */
+  .intro {
+    height: 100vh;
+    background-image: linear-gradient(#fff 60%, #e5989b);
+  }
+  nav {
+    background: #6d6875;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  #dot {
+    color: #e5989b;
+    font-size: 5rem;
+  }
+  
+  #Logodot {
+    color: #e5989b;
+    font-size: 5rem;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1rem;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 19px;
+  }
+  
+  a.active,
+  a:hover {
+    color: #e5989b;
+    transition: 0.5s;
+  }
+  .welcome {
+    font-size: 5rem;
+    box-shadow: #6d6875;
+    margin-top: 0;
+  }
+  #left {
+    width: 50%;
+    float: left;
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  #left h1 {
+    font-style: bold;
+    text-shadow: 3px 3px #6d687567;
+    box-sizing: border-box;
+    padding-right: 33%;
+  }
+  #left p {
+    font-size: larger;
+    box-sizing: border-box;
+    padding-right: 33%;
+  }
+  #right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    float: right;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  #right img {
+    margin: 10% 20%;
+    height: 29.375em;
+    width: 29.375em;
+    border-radius: 50%;
+  }
+  #left .login {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  #left .btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #6d6875;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  #left .btn:hover {
+    background: #e5989b;
+    transition: 0.5s;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  .contianer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity:1;
+    transform: translate(-50%, -50%);
+    width: 27.75rem;
+    padding: 20px 30px;
+    background: #e5989b;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition:top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms  ;
+  }
+  .popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .popup .form h2 {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+  }
+  .popup .form .form-element {
+    margin: 15px 0px;
+  }
+  
+  .popup .form .form-element label {
+    font-size: 14px;
+    color: #222;
+  }
+  :root {
+    --color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+    --color-interaction: #000000;
+    --color-interaction-minus-two: rgba(4, 83, 201, 0.12);
+    --color-ink-high-contrast: #121212;
+  }
+  div.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 20rem;
+  }
+  
+  /* Input and borders*/
+  
+  .input-underlined > input,
+  .input-filled > input {
+    border: none;
+    border-bottom: 0.125rem solid var(--color-ink-medium-contrast);
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    padding-left: 0.875rem;
+    line-height: 147.6%;
+    padding-top: 0.825rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .input-underlined > input:focus,
+  .input-filled > input:focus {
+    outline: none;
+  }
+  
+  .input-underlined > .input-label,
+  .input-filled > .input-label {
+    position: absolute;
+    top: 0.9375rem;
+    left: 0.875rem;
+    line-height: 1%;
+    color: var(--color-ink-medium-contrast);
+    transition: top 0.2s;
+  }
+  
+  /* Changes the color of the box when hovered over */
+  .input-underlined > input:hover,
+  .input-filled > input:hover {
+    background: var(--color-interaction-minus-two);
+    border-color: var(--color-ink-high-contrast);
+  }
+  /* Maked the label animate to the top and when written on it it will stay up*/
+  .input-underlined > input:focus + .input-label,
+  .input-underlined > input:valid + .input-label,
+  .-input-filled > input:focus + .input-label,
+  .input-filled > input:valid + .input-label {
+    top: 0;
+    font-size: 0.9375rem;
+    margin-bottom: 32px;
+  }
+  /* Changing the color of the label when clicked */
+  input:focus + .input-label {
+    color: var(--color-interaction);
+  }
+  /* Chaning the color of the underline when clicked */
+  .input-underlined > input:focus {
+    border-color: var(--color-interaction);
+  }
+  .popup .form .form-element input[type="checkbox"]{
+      margin-right: 5px;
+  }
+  .popup .form .form-element button{
+      width: 100%;
+      height: 40px;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      background: #6d6875;
+      color: #ffff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: .5s;
+  }
+  .popup .form .form-element button:hover{
+      background-color: #ffffff;
+      color: #000000;
+  }
+  .popup .form ,.form-element a{
+      display: block;
+      text-align: right;
+      color: #1a79ca;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  
+  @media (max-width: 1030px) {
+    nav ul li a {
+      color: #000000;
+      font-size: 19px;
+    }
+  }
+  
