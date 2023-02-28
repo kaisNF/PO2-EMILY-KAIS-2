@@ -252,7 +252,7 @@
   }
   .popup .form ,.form-element a{
       display: block;
-      text-align: right;
+      text-align: left;
       color: #1a79ca;
       text-decoration: none;
       font-weight: 600;
