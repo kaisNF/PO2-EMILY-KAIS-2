@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: poppins;
+}
+
+.intro {
+  height: 20vh;
+  background-image: linear-gradient(#fff, #e5989b 70%);
+}
+nav {
+  background: #6d6875;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  padding: 0 100px;
+  font-weight: bold;
+}
+#dot {
+  color: #e5989b;
+  font-size: 5rem;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 19px;
+}
+
+a.active,
+a:hover {
+  color: #e5989b;
+  transition: 0.5s;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10rem;
+  /* display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr; */
+
+}
+.column1 {
+  flex: 1;
+
+}
+.column2 {
+  flex: 1;
+}
+
+.container .column1 .images {
+  width: 100%;
+  margin-left: 100px;
+  margin-top: 1rem;
+  border: solid #e5989b 5px;
+}
+.content{
+    width: 100%;
+    margin-left: 10rem;
+}
+.container .column2 h2{
+    text-align: center;
+    font-size: 2.2rem;
+    padding-left: 50px;
+    margin-top: 10rem;
+    margin-bottom: 2.6rem;
+    text-decoration: underline #e5989b 5px;
+}
+.container .column2 p{
+    padding-left: 50px;
+    font-size: 1.2rem;
+}
+
+.btn{
+    display: flex;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-left: 10%;
+    padding: 1rem 13rem;
+    background-color: #6d6875;
+    border-radius: 1rem;
+    margin-top: 10px;
+}
+/* .dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.dropdown li{
+    display: block;
+    background-color: #fff;
+}
+.dropdown li a{
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+.dropdown li:hover{
+    background-color: #e5989b;
+} */
+@media (max-width: 1030px){
+    nav ul li a{
+      color: #000000;
+      font-size: 19px;
+    }
+  }
