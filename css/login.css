@@ -168,7 +168,7 @@
   }
   :root {
     --color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
-    --color-interaction: #000000;
+    --color-interaction: #7b506f;
     --color-interaction-minus-two: rgba(4, 83, 201, 0.12);
     --color-ink-high-contrast: #121212;
   }
