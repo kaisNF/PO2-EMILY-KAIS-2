@@ -1,34 +1,135 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <title> Service Viewing Page</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Booking Viewing Page</title>
 
-    <link href="css/services.css" rel="stylesheet">
+    <link href="css/bookingviewing.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-   <header class="intro">
-      <nav>
-          <!-- <input type="checkbox" id="check"> ----TO FIX---- Responsive java logo issue 
+    <header>
+        <nav>
+            <!-- <input type="checkbox" id="check"> ----TO FIX---- Responsive java logo issue 
           <label for="check" class="checkbtn">
               <i class="fas fa-bars"></i>
           </label> -->
-          <label class="logo">Auxiliary<a id="dot">.</a></label>
-          <ul>
-              <li><a href ="home.html">Home</a></li>
-              <li><a  href ="AboutUs.html">About us</a></li>
-              <li><a class="active" href ="services.html">Services</a></li>
-              <li><a href ="bookings.html">Bookings</a></li>
-              <li><a href ="index.html">Style Guide</a></li>
-          </ul>
-      </nav>
+            <label class="logo">Auxiliary<a id="dot">.</a></label>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a class"active" href = "services.html">Services</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="index.html">Style Guide</a></li>
+            </ul>
+        </nav>
 
-<h1>Services Viewing</h1>
-<a href="checkout.html">Add to Cart</a> 
-</body>
+
+        <div class="bodycontainer">
+
+            <div class="column1">
+
+                    <div class = "product-leading-details-bar">
+                    <ul>
+                        <li><a href = "Bookings.html">Booking -</a><li>
+                        <li><a href = "Bookings.html">Math</a><li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class = "product-images">    
+                    <img src="img/math4.jpg" alt="" class="images">
+                    <img src="img/math2.jpg" alt="" class="images">
+                    <img src="img/math3.jpg" alt="" class="images">
+                    </div>
+
+            </div> <!--end of column one-->
+
+            <div class="column2">
+             
+                <div class="content">
+
+                    <div class ="container2">
+                    <h2>Math Classes</h2> 
+                    <p id = pricing> $52</p>
+                    </div>
+            
+
+
+                    <h3>Description<h3>
+                    <p>
+                        We offer a wide range of courses designed to help students develop a solid foundation in math.
+                        The classes cover various topics such as arithmetic, geometry, algebra, and problem-solving.
+                        The curriculum is designed to be engaging and interactive, allowing students to learn math
+                        concepts through fun activities and exercises.
+                        The website also provides access to practice problems and quizzes that help students gauge their
+                        progress and identify areas where they need to improve.
+                        Overall, Auxiliary's math classes provide an excellent resource for students looking to enhance
+                        their math skills and build a strong foundation for future academic success.
+                    </p>
+                    <a class="btn" href="checkout.html">Add to cart - $52</a>
+
+                    <p>or 4 payments of $14.50 with PayBright. <a>Info.</a></p>
+
+                </div> <!--end of content-->
+
+                <div class = "reviews"> <hr>
+
+                <h3>Write a Review</h3>
+
+                    <form>
+                  <div class = "container3">
+
+                    
+
+                      
+
+                        <!--<div class = "personal-Info-Container">  -->  
+                            <label for = "firstName">First Name: </label>
+                            <input type = "text" placeholder = "John" id = "firstName" name = "fName">
+                            <label for = "lastName" > Last Name: </label>
+                            <input type = "text" placeholder = "Doe" id = "lastName" name = "lName">
+                        <!--</div> -->
+
+
+
+                        <label for = "title">Review Title(required):</label>
+                        <input type = "text" placeholder = "Headline or summary of your review" id = "title" name = "Rtitle" required>
+                        <label for = "review">Review (required):</label>
+                        <input type = "text" placeholder = 
+                        "Write your review here. It must be more than 50 characters long. Consider your experience" id = "review" name = "rview" required>
+                    <!--
+                          <div class="rate"> 
+                            <p> Overall Review: </p> <!--check with ta for semantics
+                            <input type="radio" id="star5" name="rate" value="1" />
+                            <label for="star5" title="text">1 stars</label>
+                            <input type="radio" id="star4" name="rate" value="2" />
+                            <label for="star4" title="text">2 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="4" />
+                            <label for="star2" title="text">4 stars</label>
+                            <input type="radio" id="star1" name="rate" value="5" />
+                            <label for="star1" title="text">5 star</label>
+                       </div> -->
+                         
+                        <input type = "submit" id = "sub" value = "Submit">                
+                    </div>
+                    </form>
+                </div>   <!--end of review-->      
+
+            </div> <!--end of column two -->
+
+        </div> <!--end of body container-->
+
+</body> <!-- end of body-->
+
+<footer class="intro">
+
+</footer>
+
 </html>
