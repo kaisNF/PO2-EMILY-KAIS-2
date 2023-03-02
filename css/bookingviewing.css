@@ -5,6 +5,7 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: poppins;
   src: url(../fonts/Poppins-Regular.ttf);
@@ -23,6 +24,7 @@ nav {
   height: 80px;
   width: 100%;
 }
+
 label.logo {
   color: #fff;
   font-size: 3rem;
@@ -50,89 +52,125 @@ nav ul li a {
   font-size: 19px;
 }
 
-a.active,
-a:hover {
+a.active, a:hover {
   color: #e5989b;
   transition: 0.5s;
 }
-.container {
+
+.bodycontainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 10rem;
-  /* display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr 1fr; */
+  justify-content: space-around;
 
+  margin:1rem;
 }
+
+.bodycontainer div    {
+  padding:1rem;
+  }
+
 .column1 {
   flex: 1;
+  margin-top:4rem;
 
 }
+/*
+.product-images {
+    height:100rem;
+    overflow: hidden;
+    overflow-y:scroll;
+}*/
+
 .column2 {
   flex: 1;
+  margin-top:4rem;
 }
 
-.container .column1 .images {
+.bodycontainer .column1 ul li{
+    display:inline-block;
+}
+.bodycontainer .column1 .images {
   width: 100%;
-  margin-left: 100px;
-  margin-top: 1rem;
+  margin-bottom:4rem;
+  margin-top:4rem;
   border: solid #e5989b 5px;
 }
+
 .content{
     width: 100%;
-    margin-left: 10rem;
+    padding:16rem;
 }
-.container .column2 h2{
+
+.container2 {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom:2rem;
+    margin-top:6rem;
+}
+
+.container2 div{
+}
+
+.bodycontainer .column2 h2{
     text-align: center;
     font-size: 2.2rem;
-    padding-left: 50px;
-    margin-top: 10rem;
-    margin-bottom: 2.6rem;
+    
+    //margin-top:8rem;
+    //margin-bottom:3rem;
+
     text-decoration: underline #e5989b 5px;
 }
-.container .column2 p{
-    padding-left: 50px;
+
+#pricing    {
+    font-size:2.2rem;
+}
+
+.bodycontainer .column2 p{
     font-size: 1.2rem;
 }
+
+.bodycontainer .column2 h3{
+    font-size: 1.5rem;
+    font-weight:bold;
+    padding-left:1rem;
+    margin-bottom:1rem;
+}   
 
 .btn{
     display: flex;
+    flex-wrap: wrap;
     font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
-    flex-wrap: wrap;
-    width: fit-content;
-    margin-left: 10%;
-    padding: 1rem 13rem;
+
+    
+    padding: 1rem 4rem;
     background-color: #6d6875;
     border-radius: 1rem;
-    margin-top: 10px;
+    width:fit-content;
+    margin:auto;
+    text-align:center;
+    margin-top:2rem;
+    margin-bottom:1rem;
 }
-/* .dropdown{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
+/*
+.column2 a:hover {
+text-decoration: underline;
+transition:0;
+ color: black;
 }
-.dropdown li{
-    display: block;
-    background-color: #fff;
-}
-.dropdown li a{
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
-}
-.dropdown li:hover{
-    background-color: #e5989b;
-} */
+*/
+
+/*
 @media (max-width: 1030px){
     nav ul li a{
       color: #000000;
       font-size: 19px;
     }
   }
+  */
