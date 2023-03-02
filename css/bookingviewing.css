@@ -57,6 +57,8 @@ a.active, a:hover {
   transition: 0.5s;
 }
 
+
+
 .bodycontainer {
   display: flex;
   flex-wrap: wrap;
@@ -73,8 +75,6 @@ a.active, a:hover {
 .column1 {
   flex: 1;
   margin-top:4rem;
-
-
 }
 /*
 .product-images {
@@ -97,7 +97,6 @@ a.active, a:hover {
   margin-top:4rem;
   border: solid #e5989b 5px;
 }
-
 .content{
     width: 100%;
     padding:16rem;
@@ -265,12 +264,39 @@ transition:0;
 }
 */
 
-/*
-@media (max-width: 1030px){
+
+@media (max-width: 1025px)  { //this isnt working btw
+    
+  
     nav ul li a{
       color: #000000;
       font-size: 19px;
     }
-  }
-  */
+
+
+  .bodycontainer {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  margin:1rem;
+}
+
+.column1{
+  margin-top:4rem;
+  flex-grow: 0;
+}
+
+.column2{
+    flex-grow:0;
+    
+}
+
+
+.bodycontainer div    {
+  padding:1rem;
+  } 
+
+}
+
+  
 
