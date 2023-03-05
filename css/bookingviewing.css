@@ -1,3 +1,33 @@
+@media(max-width:65rem){
+
+
+.bodycontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:1rem;
+}
+
+.bodycontainer div    {
+  padding:1rem;
+  } 
+
+.column1 {
+  flex:1;
+  margin-top:4rem;
+}
+
+.column2 {
+  flex:2;
+  margin-top:4rem;
+}
+
+
+
+
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -73,18 +103,12 @@ a.active, a:hover {
   } 
 
 .column1 {
-  flex: 1;
+  flex:1;
   margin-top:4rem;
 }
-/*
-.product-images {
-    height:100rem;
-    overflow: hidden;
-    overflow-y:scroll;
-}*/
 
 .column2 {
-  flex: 1;
+  flex:1;
   margin-top:4rem;
 }
 
@@ -120,9 +144,6 @@ a.active, a:hover {
     text-align: center;
     font-size: 2.2rem;
     
-    //margin-top:8rem;
-    //margin-bottom:3rem;
-
     text-decoration: underline #e5989b 5px;
 }
 
@@ -146,12 +167,11 @@ a.active, a:hover {
     flex-wrap: wrap;
     font-size: 1.2rem;
     color: #fff;
-
-
     
-    padding: 1rem 4rem;
-    background-color: #6d6875;
-    border-radius: 1rem;
+
+    padding: 1rem 10rem;
+    background-color: black;
+    border-radius: 0.5rem;
     width:fit-content;
     margin:auto;
     text-align:center;
@@ -216,87 +236,4 @@ padding-bottom:2rem;
     margin:auto;
     text-align:center;
 }
-
-/*rating test
-.rate {
-    height: 46px;
-    padding: 0 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-
-.rate:not(:checked) > label {
-    float:left;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
-}
-
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}*/
-
-
-/*
-.column2 a:hover {
-text-decoration: underline;
-transition:0;
- color: black;
-}
-*/
-
-
-@media (max-width: 1025px)  { //this isnt working btw
-    
-  
-    nav ul li a{
-      color: #000000;
-      font-size: 19px;
-    }
-
-
-  .bodycontainer {
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction: column;
-  margin:1rem;
-}
-
-.column1{
-  margin-top:4rem;
-  flex-grow: 0;
-}
-
-.column2{
-    flex-grow:0;
-    
-}
-
-
-.bodycontainer div    {
-  padding:1rem;
-  } 
-
-}
-
-  
 
