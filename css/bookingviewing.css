@@ -23,9 +23,6 @@
   margin-top:4rem;
 }
 
-
-
-
 }
 
 * {
@@ -87,8 +84,6 @@ a.active, a:hover {
   transition: 0.5s;
 }
 
-
-
 .bodycontainer {
   display: flex;
   flex-wrap: wrap;
@@ -137,9 +132,6 @@ a.active, a:hover {
     margin-top:6rem;
 }
 
-.container2 div{
-}
-
 .bodycontainer .column2 h2{
     text-align: center;
     font-size: 2.2rem;
@@ -149,6 +141,15 @@ a.active, a:hover {
 
 #pricing    {
     font-size:2.2rem;
+}
+
+.bodycontainer .column2 .another    {
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    justify-content:center;
+    border:black;
+
 }
 
 .bodycontainer .column2 p{
