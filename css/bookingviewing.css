@@ -136,7 +136,8 @@ a.active, a:hover {
     text-align: center;
     font-size: 2.2rem;
     
-    text-decoration: underline #e5989b 5px;
+    //text-decoration: underline #2e2929 5px;
+    font:bold;
 }
 
 #pricing    {
