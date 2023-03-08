@@ -271,3 +271,50 @@ input:focus + .input-label {
     font-size: 19px;
   }
 }
+
+
+.container-1   {
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin:1rem;
+    padding:0rem;
+    align-content:center;
+    height:20vh;
+    border:1px solid rgb(163, 163, 163);
+}
+
+.container-1 .item-1    {
+    border:1px solid rgb(163, 163, 163);
+    align-self:center;
+}
+
+.container-1 .item-2    {
+    border:1px solid rgb(163, 163, 163);
+}
+
+.container-2    {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:row;
+    height:40vh;
+    border:1px solid rgb(163, 163, 163);
+    margin:1rem;
+}
+
+
+.container-2 .box1{
+  border:1px solid rgb(163, 163, 163);
+}
+
+.container-2 .box2{
+  border:1px solid rgb(163, 163, 163);
+}
+
+.container-2 .box3{
+  border:1px solid rgb(163, 163, 163);
+}
+
