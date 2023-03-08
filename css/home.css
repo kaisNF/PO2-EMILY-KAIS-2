@@ -275,24 +275,41 @@ input:focus + .input-label {
 
 .container-1   {
     display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
     align-items:flex-start;
-    justify-content:center;
-    align-items:center;
     flex-direction: column;
-    margin:1rem;
+    margin-top:4rem;
     padding:0rem;
-    align-content:center;
-    height:20vh;
+    //align-content:center;
+    height:70vh;
     border:1px solid rgb(163, 163, 163);
+    margin:1rem;
+
+}
+
+.container-1 h1{
+    margin:1rem;
+    font-size:4rem;
+    font-weight:bold;
 }
 
 .container-1 .item-1    {
     border:1px solid rgb(163, 163, 163);
-    align-self:center;
+    margin:1rem;
 }
 
 .container-1 .item-2    {
     border:1px solid rgb(163, 163, 163);
+    margin:1rem;
+    margin-bottom:0.5rem;
+}
+
+.container-1 .item-3    {
+    border:1px solid rgb(163, 163, 163);
+    margin-top:0.5rem;
+    margin-left:1rem;
+    margin-bottom:1rem;
 }
 
 .container-2    {
@@ -303,18 +320,57 @@ input:focus + .input-label {
     height:40vh;
     border:1px solid rgb(163, 163, 163);
     margin:1rem;
+    padding:1rem;
+
+}
+
+.container-2 h2{
+    font-size:2rem;
+    font:bold;
 }
 
 
+.container-2 p{
+    font-size:1.2rem;
+}
+
 .container-2 .box1{
-  border:1px solid rgb(163, 163, 163);
+  border-top:1px solid rgb(163, 163, 163);
+  margin:1.5rem;
 }
 
 .container-2 .box2{
-  border:1px solid rgb(163, 163, 163);
+  border-top:1px solid rgb(163, 163, 163);
+    margin:1.5rem;
 }
 
 .container-2 .box3{
+  border-top:1px solid rgb(163, 163, 163);
+    margin:1.5rem;
+}
+
+
+.container-3    {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:row;
+    height:40vh;
+    border:1px solid rgb(163, 163, 163);
+    margin:1rem;
+    padding:1rem;
+
+}
+
+
+.container-3 .box1{
   border:1px solid rgb(163, 163, 163);
 }
 
+.container-3 .box2{
+  border:1px solid rgb(163, 163, 163);
+}
+
+.container-3 .box3{
+  border:1px solid rgb(163, 163, 163);
+}
