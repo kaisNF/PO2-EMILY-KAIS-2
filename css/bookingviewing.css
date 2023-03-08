@@ -1,27 +1,28 @@
-@media(max-width:65rem){
+@media(max-width:65rem) {
 
 
 .bodycontainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   margin:1rem;
 }
 
-.bodycontainer div    {
-  padding:1rem;
-  } 
-
-.column1 {
-  flex:1;
+.bodycontainer .column1 .images {
+  height: 75%;
+  margin-bottom:4rem;
   margin-top:4rem;
 }
 
-.column2 {
-  flex:2;
-  margin-top:4rem;
+.bodycontainer .column2 h2{
+    text-align: center;
+    font-size: 1.2rem;
+    
+    //text-decoration: underline #2e2929 5px;
+    font:bold;
 }
+
 
 }
 
@@ -104,7 +105,7 @@ a.active, a:hover {
 
 .column2 {
   flex:1;
-  margin-top:4rem;
+  //margin-top:4rem;
 }
 
 .bodycontainer .column1 ul li{
@@ -114,8 +115,8 @@ a.active, a:hover {
   width: 100%;
   margin-bottom:4rem;
   margin-top:4rem;
-  border: solid #e5989b 5px;
 }
+
 .content{
     width: 100%;
     padding:16rem;
@@ -148,13 +149,29 @@ a.active, a:hover {
     display:flex;
     flex-wrap:nowrap;
     flex-direction:row;
-    justify-content:center;
-    border:black;
+    //justify-content:space-between;
+    align-items:center;
+    //align-content:center;
+    border:1px solid rgb(163, 163, 163);
+    //border-bottom:1px solid rgb(163, 163, 163);
+    padding:0rem;
 
 }
 
+.bodycontainer .column2 .another  .item-1 {
+font-size:1rem;
+border-right:1px solid rgb(164,164,164);
+}
+
+.bodycontainer .column2 .another  .item-2 {
+font-size:1rem;
+border-left:1px solid rgb(164,164,164);
+}
+
+
 .bodycontainer .column2 p{
     font-size: 1.2rem;
+    margin-bottom:1.2rem;
 }
 
 .bodycontainer .column2 h3{
@@ -167,7 +184,7 @@ a.active, a:hover {
 .btn    {
     
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-size: 1.2rem;
     color: #fff;
     
@@ -201,27 +218,20 @@ display:flex;
 flex-direction:column;
 }
 
-.personal-info-container {
-display:flex;
-flex-direction:row;
-justify-content: space-between;
-margin:0rem;
-}
-
-.personal-info-container label input{
-margin:0;
-padding-bottom:2rem;
-}
-
-
 .container3 label{
     margin-bottom:0.5rem;
 }
 
-.bodycontainer .reviews h3{
- margin-top:2rem;
+.bodycontainer .reviews     {
+       border:1px solid rgb(163, 163, 163);
+       border-radius:0.5rem;
+       margin-top:1rem;
+
 }
 
+.bodycontainer .reviews h3{
+ margin-top:1rem;
+}
 
 .container3 input{
     padding:1rem;

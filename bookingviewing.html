@@ -14,10 +14,7 @@
 
     <header>
         <nav>
-            <!-- <input type="checkbox" id="check"> ----TO FIX---- Responsive java logo issue 
-          <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-          </label> -->
+
             <label class="logo">Auxiliary<a id="dot">.</a></label>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -31,16 +28,10 @@
 
         <div class="bodycontainer">
 
+
+
             <div class="column1">
 
-                    <div class = "product-leading-details-bar">
-                    <ul>
-                        <li><a href = "Bookings.html">Booking -</a><li>
-                        <li><a href = "Bookings.html">Math</a><li>
-                        </ul>
-                    </div>
-
-                    
                     <div class = "product-images">    
                     <img src="img/music1.jpeg" alt="" class="images">
                     <img src="img/music2.jpeg" alt="" class="images">
@@ -70,24 +61,22 @@
                        for collaboration with other fellow musicians. 
                        Bookings go by the hour.
                     </p>
-
                     <div class = "another">
                         <div class = "item-1">
-                        <P>HELLO<P>
+                            <label for="select">SELECT VISIT DATE:</label>
                             </div>
-                            <div class = "item2">
-                                <p>BYE
-                                    </div>
+                        <div class = "item-2">
+                            <input type="date" id="start" name="trip-start"
+                                value="2023-03-10"
+                                min="2023-03-10" max="2023-03-31">
+                        </div>
                     </div>
-
-
-
 
                     <a class="btn" href="checkout.html">ADD TO CART</a>
 
-                </div> <!--end of content-->
+                </div> <!--end of content--><hr>
 
-                <div class = "reviews"> <hr>
+                <div class = "reviews">
 
                 <h3>Write a Review</h3>
 
@@ -98,13 +87,14 @@
 
                       
 
-                        <!--<div class = "personal-Info-Container">  -->  
+    
                             <label for = "firstName">First Name: </label>
                             <input type = "text" placeholder = "John" id = "firstName" name = "fName">
+                          
+                        
                             <label for = "lastName" > Last Name: </label>
                             <input type = "text" placeholder = "Doe" id = "lastName" name = "lName">
-                        <!--</div> -->
-
+               
 
 
                         <label for = "title">Review Title(required):</label>
@@ -112,20 +102,7 @@
                         <label for = "review">Review (required):</label>
                         <input type = "text" placeholder = 
                         "Write your review here. It must be more than 50 characters long. Consider your experience" id = "review" name = "rview" required>
-                    <!--
-                          <div class="rate"> 
-                            <p> Overall Review: </p> <!--check with ta for semantics
-                            <input type="radio" id="star5" name="rate" value="1" />
-                            <label for="star5" title="text">1 stars</label>
-                            <input type="radio" id="star4" name="rate" value="2" />
-                            <label for="star4" title="text">2 stars</label>
-                            <input type="radio" id="star3" name="rate" value="3" />
-                            <label for="star3" title="text">3 stars</label>
-                            <input type="radio" id="star2" name="rate" value="4" />
-                            <label for="star2" title="text">4 stars</label>
-                            <input type="radio" id="star1" name="rate" value="5" />
-                            <label for="star1" title="text">5 star</label>
-                       </div> -->
+
                          
                         <input type = "submit" id = "sub" value = "Submit">                
                     </div>
