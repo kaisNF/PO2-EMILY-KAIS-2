@@ -27,6 +27,9 @@
     background: #6d6875;
     height: 80px;
     width: 100%;
+      display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   }
   label.logo {
     color: #fff;
@@ -43,6 +46,9 @@
   nav ul {
     float: right;
     margin-right: 20px;
+     display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   }
   
   nav ul li {
@@ -531,3 +537,11 @@
       font-size:1rem;
       color:#2d1c0b;
     }
+
+    /* put the nav links in the center when the links break into a new line */
+@media(max-width:1024px) {
+  nav {
+    justify-content: center;
+    height:10rem;
+  }
+}
