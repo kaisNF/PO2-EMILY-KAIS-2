@@ -108,6 +108,7 @@ a.active, a:hover{
 @media (max-width: 1024px){
   nav {
     justify-content:center;
+     height: 10rem;
   }
 }
 
