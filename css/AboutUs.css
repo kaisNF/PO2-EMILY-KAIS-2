@@ -21,6 +21,9 @@ nav{
   background: #6D6875;
   height: 80px;
   width: 100%;
+   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 label.logo{
   color: #fff;
@@ -37,6 +40,9 @@ label.logo{
 nav ul{
   float: right;
   margin-right: 20px;
+   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav ul li{
@@ -99,13 +105,9 @@ a.active, a:hover{
   transition: .5s;
 
 }
-@media (max-width: 1030px){
-  nav ul{
-    float: left;
-  }
-  nav ul li a{
-    color: #000000;
-    font-size: 19px;
+@media (max-width: 1024px){
+  nav {
+    justify-content:center;
   }
 }
 
