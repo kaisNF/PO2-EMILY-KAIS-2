@@ -22,6 +22,7 @@
         <li><a href="index2.html">Style Guide</a></li>
       </ul>
     </nav>
+  </header>
 
   <section class="element">
     <!--https://www.w3schools.com/howto/howto_css_checkout_form.asp - drew reference to learn how to create a checkout cart-->
@@ -29,55 +30,52 @@
     <div class="small-contianer cart-page">
       <table>
         <tr>
-          <th>Product
-    </div>
-    </th>
-    <th>Quantity</th>
-    <th>Total</th>
-    </tr>
-    <tr>
-      <td>
-        <div class="cart-info">
-          <img src="img/MathImage.jpg" alt="an image of the Math class">
-          <div>
-            <p>Math class</p>
-            <small>Price: $58/hr</small>
-          </div>
-        </div>
-      </td>
-      <td> <input type="number" value="1"></td>
-      <td>$58/hr</td>
-    </tr>
-    <tr>
-      <td>
-        <div class="cart-info">
-          <img src="img/EnglishImage.jpg" alt="an image of the MIDI Keybaord">
-          <div>
-            <p>English Class</p>
-            <small>Price: $55/hr</small>
-          </div>
-        </div>
-      </td>
-      <td> <input type="number" value="1"></td>
-      <td>$55/hr</td>
-    </tr>
-    </table>
-    <div class="total-price">
-      <table>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Total</th>
         <tr>
-          <td>Subtotal</td>
-          <td>$113.00</td>
+          <td>
+            <div class="cart-info">
+              <img src="img/MathImage.jpg" alt="an image of the Math class">
+              <div>
+                <p>Math class</p>
+                <small>Price: $58/hr</small>
+              </div>
+            </div>
+          </td>
+          <td> <input type="number" value="1"></td>
+          <td>$58/hr</td>
         </tr>
         <tr>
-          <td>Tax</td>
-          <td>$13.56</td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>$126.56</td>
+          <td>
+            <div class="cart-info">
+              <img src="img/EnglishImage.jpg" alt="an image of the MIDI Keybaord">
+              <div>
+                <p>English Class</p>
+                <small>Price: $55/hr</small>
+              </div>
+            </div>
+          </td>
+          <td> <input type="number" value="1"></td>
+          <td>$55/hr</td>
         </tr>
       </table>
-    </div>
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$113.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$13.56</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$126.56</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -88,7 +86,7 @@
       </form>
       <h2 class="headline">Payment Form</h2>
       <div class="checkout_container">
-        <form action="">
+        <form action="*">
           <div class="row">
             <div class="col">
               <h3 class="title">billing address</h3>
@@ -96,32 +94,38 @@
                 <label class="input-underlined">
                   <input required>
                   <span class="input-label">name</span>
+                </label>
               </div>
               <div class="input-group">
                 <label class="input-underlined">
                   <input required>
                   <span class="input-label">email</span>
+                </label>
               </div>
               <div class="input-group">
                 <label class="input-underlined">
                   <input required>
                   <span class="input-label">billing adresse</span>
+                </label>
               </div>
               <div class="input-group">
                 <label class="input-underlined">
                   <input required>
                   <span class="input-label">city</span>
+                </label>
               </div>
               <div class="flex">
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required>
                     <span class="input-label">state</span>
+                  </label>
                 </div>
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required>
                     <span class="input-label">zip code</span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -135,27 +139,32 @@
                 <label class="input-underlined">
                   <input required>
                   <span class="input-label">cardholder</span>
+                </label>
               </div>
               <div class="input-group">
                 <label class="input-underlined">
                   <input required type="password">
                   <span class="input-label">credit card number</span>
+                </label>
               </div>
               <div class="input-group">
                 <label class="input-underlined">
                   <input required>
                   <span class="input-label">exp month</span>
+                </label>
               </div>
               <div class="flex">
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required>
                     <span class="input-label">exp year</span>
+                  </label>
                 </div>
                 <div class="input-group">
                   <label class="input-underlined">
                     <input required type="password">
-                    <span class="input-label">CVV </type></span>
+                    <span class="input-label">CVV</span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -164,9 +173,10 @@
         </form>
       </div>
     </section>
+  </section>
 
-    <!--Payment Options-->
-    <!--
+  <!--Payment Options-->
+  <!--
 <section class="payment-options">
 <h3>Payment Options</h3>
 <input type = "radio" id = "monthly" name = "pref_Payment" value = "MONTHLY">
