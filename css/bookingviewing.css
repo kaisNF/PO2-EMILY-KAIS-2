@@ -20,9 +20,10 @@ body {
   height: 20vh;
   background-image: linear-gradient(#fff, #e5989b 70%);
 }
+
 nav {
   background: #6d6875;
-  height: 80px;
+  height: 5rem;
   display:flex;
   justify-content:space-between;
   flex-wrap:wrap;
@@ -36,6 +37,7 @@ label.logo {
   padding: 0 100px;
   font-weight: bold;
 }
+
 #dot {
   color: #e5989b;
   font-size: 5rem;
@@ -237,10 +239,13 @@ flex-direction:column;
     text-align:center;
 }
 
-@medi (max-width:1024px)    {
-    
+@media (max-width:1024px)    {
+
     nav {
-        justify-content:center;
-    }
+          justify-content:center;
+  height: 10rem;
+}
+
+
 }
 
