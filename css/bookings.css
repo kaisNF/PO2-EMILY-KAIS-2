@@ -63,7 +63,7 @@ a.active, a:hover{
   color: #E5989B;
   transition: .5s;
 }
-
+/* styling the content on the page */
 .service-list h1{
   font-size: 3rem;
   text-align: center;

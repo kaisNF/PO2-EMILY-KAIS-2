@@ -13,7 +13,7 @@
 body {
   font-family: poppins;
 }
-/* Ask the TA to put the background image in the footer */
+/* adding the gradiant colors */
 .intro {
   height: 100vh;
   background-image: linear-gradient(#fff 60%, #e5989b);
@@ -66,6 +66,7 @@ a:hover {
   color: #e5989b;
   transition: 0.5s;
 }
+/* Styling the home page by splitting the content into left and right */
 .welcome {
   font-size: 5rem;
   margin-top: 0;
