@@ -163,9 +163,9 @@ a:hover {
   color: #fff;
 
   padding: 1rem 10rem;
-  background-color: black;
+  background-color: #6d6875;
   border-radius: 0.5rem;
-  border: 1px solid #000;
+  border: 1px solid #6d6875;
 
   width: fit-content;
   margin: auto;
@@ -177,11 +177,11 @@ a:hover {
 }
 
 .btn:hover {
-  border: 1px solid #000;
+  border: 1px solid #6d6875;
   box-shadow: inset 28rem 0 0 0 rgb(255, 255, 255);
   border-radius: 0.5rem;
   cursor: pointer;
-  color: #000;
+  color: #6d6875;
 }
 .container3 {
   display: flex;
@@ -209,6 +209,7 @@ a:hover {
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
+
 
 #title {
   padding-bottom: 4rem;
