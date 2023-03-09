@@ -117,7 +117,6 @@ a.active, a:hover {
     text-align: center;
     font-size: 2.2rem;
     
-    //text-decoration: underline #2e2929 5px;
     font:bold;
 }
 
@@ -176,9 +175,7 @@ border-left:1px solid rgb(164,164,164);
     margin-top:2rem;
     margin-bottom:1rem;
 
-    //border:pink 5px;
     box-shadow:inset 0 0 0 0 #fff;
-    transition:ease-out:0.3s;
 }
 
 .btn:hover{

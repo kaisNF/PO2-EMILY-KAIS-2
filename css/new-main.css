@@ -294,7 +294,7 @@
     margin: 1rem 2rem;
   }
   .content h1{
-    font-style: bold;
+    font: bold;
     text-shadow: 3px 3px #6d687567;
     box-sizing: border-box;
     margin-bottom: 2.5rem;
@@ -314,7 +314,7 @@
     width: 40rem;
     padding: 4rem;
     background: linear-gradient( #ffffff  , #E5989B);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0,1);
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
     margin: 1rem;
     box-sizing: border-box;
