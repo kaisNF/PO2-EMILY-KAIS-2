@@ -18,6 +18,7 @@ body {
   height: 130vh;
   background-image: linear-gradient(#fff, #e5989b);
 }
+/* Navigation bar styling */
 nav {
   background: #6d6875;
   height: 80px;
@@ -63,6 +64,7 @@ a:hover {
   border-top-color: black;
   background-color: rgb(255, 255, 255)
 }
+/* Styling the cart section (Checkout) and putting the content in order */
 .cart-page {
   margin-bottom: 80px;
   margin-top: 1rem;
@@ -115,6 +117,7 @@ h2 {
 }
 
 /*--------- PAYMENT FORM CSS--------- */
+/* Styling the payment form */
 /* Source driven from https://www.youtube.com/watch?v=cce_70pxbqw&ab_channel=Mr.WebDesigner */
 .checkout_container {
   display: flex;
@@ -171,6 +174,7 @@ h2 {
 
 
 /* ---------------INPUT STYLING -------------------*/
+/* Styling the inputs */
 /* Source https://freefrontend.com/css-input-text/ */
 div.container {
   display: flex;

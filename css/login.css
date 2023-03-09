@@ -231,6 +231,7 @@
   .input-underlined > input:focus {
     border-color: var(--color-interaction);
   }
+  /* Having the popup menu for the logging in */
   .popup .form .form-element input[type="checkbox"]{
       margin-right: 5px;
   }

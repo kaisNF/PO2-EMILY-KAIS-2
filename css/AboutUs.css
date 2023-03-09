@@ -16,7 +16,7 @@ body{
   font-family: poppins;
 
 }
-
+/* Navigation bar styling */
 nav{
   background: #6D6875;
   height: 80px;
@@ -67,7 +67,7 @@ a.active, a:hover{
   margin-bottom: 2.5rem;
   text-align: center;
 }
-
+/* Container styling */
 .container{
   margin-top: 2rem;
   display: flex;
@@ -86,7 +86,7 @@ a.active, a:hover{
   margin: 1rem;
   box-sizing: border-box;
 }
-
+/* Button styling */
 .btn{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;

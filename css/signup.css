@@ -13,7 +13,6 @@
   body {
     font-family: poppins;
   }
-  /* Ask the TA to put the background image in the footer */
   .intro {
     height: 100vh;
     background-image: linear-gradient(#fff 60%, #e5989b);
@@ -126,6 +125,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+  /* Adding the pop up page for signing up */
   .popup {
     position: absolute;
     top: 50%;
