@@ -67,52 +67,59 @@ a:hover {
   transition: 0.5s;
 }
 /* Styling the home page by splitting the content into left and right */
+
 .welcome {
-  font-size: 5rem;
-  margin-top: 0;
+  font-size: 2.5rem;
+  padding:0rem;
+  margin-top: 0rem;
 }
-#left {
-  width: 50%;
-  float: left;
-  padding-left: 10%;
-  padding-top: 5%;
+
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
-#left h1 {
-  font: bold;
-  text-shadow: 3px 3px #6d687567;
-  box-sizing: border-box;
-  padding-right: 33%;
-}
-#left p {
-  font-size: larger;
-  box-sizing: border-box;
-  padding-right: 33%;
-}
-#right {
+
+.container-1 {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-  float: right;
-  margin: 0 auto;
-  box-sizing: border-box;
+  justify-content:center;
+  margin-top:2rem;
+  align-items:center;
+  align-content:center;
 }
-#right img {
-  margin: 10% 20%;
-  height: 29.375em;
-  width: 29.375em;
-  border-radius: 50%;
+
+
+.container-1 .item-2 {
+display: flex;
+flex-wrap: wrap;
+margin-top:1rem;
+margin-bottom:1rem;
+justify-content:center;
 }
-#left .login {
-  font-weight: bold;
-  text-decoration: underline;
+
+
+.container-1 .item-3 {
+display: flex;
+flex-wrap: wrap;
+margin-top:1rem;
+margin-bottom:1rem;
+justify-content:center;
 }
-#left .btn {
+
+.container-1 h1{
+    font-size:3.5rem;
+    text-decoration: underline #E5989B;
+}
+
+
+.container-1 .btn a    {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #fff;
-  background: #6d6875;
+  background-color:#6d6875;
   margin-bottom: 2rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   text-align: center;
   text-decoration: none;
   border-radius: 20px;
@@ -120,18 +127,22 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
-#left .btn:hover {
-  background: #e5989b;
-  transition: 0.5s;
+
+.container-1 .btn a:hover    {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #E5989B;
+  margin-bottom: 2rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
-.responsive {
-  width: 100%;
-  height: auto;
-}
-.contianer {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .popup {
   position: absolute;
   top: -150%;
@@ -271,81 +282,116 @@ input:focus + .input-label {
     font-weight: 600;
 }
 
-
-.container-1   {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-    align-items:flex-start;
-    flex-direction: column;
-    margin-top:4rem;
-    padding:0rem;
-  
-    height:70vh;
-    border:1px solid rgb(163, 163, 163);
-    margin:1rem;
-
-}
-
-.container-1 h1{
-    margin:1rem;
-    font-size:4rem;
-    font-weight:bold;
-}
-
-.container-1 .item-1    {
-    border:1px solid rgb(163, 163, 163);
-    margin:1rem;
-}
-
-.container-1 .item-2    {
-    border:1px solid rgb(163, 163, 163);
-    margin:1rem;
-    margin-bottom:0.5rem;
-}
-
-.container-1 .item-3    {
-    border:1px solid rgb(163, 163, 163);
-    margin-top:0.5rem;
-    margin-left:1rem;
-    margin-bottom:1rem;
-}
-
 .container-2    {
     display:flex;
     justify-content:space-around;
-    align-items:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
     flex-direction:row;
-    height:40vh;
     border:1px solid rgb(163, 163, 163);
-    margin:1rem;
     padding:1rem;
-
+    margin-top:1rem;
+    background-color:#6d6875;
+   // background-image: url("../img/SchoolBuilding.jpeg");
+    background-repeat:no-repeat;
 }
+
 
 .container-2 h2{
     font-size:2rem;
     font:bold;
+    margin-bottom:1rem;
 }
 
 
 .container-2 p{
-    font-size:1.2rem;
+    font-size:1.0rem;
+    margin-bottom:2rem;
 }
 
 .container-2 .box1{
   border-top:1px solid rgb(163, 163, 163);
   margin:1.5rem;
+  flex:1;
+  padding:1rem;
+}
+
+.container-2 .box1 h2{
+    color:white;
+    font:bold;
+}
+
+.container-2 .box1 p{
+    color:#e2ddeb;
+}
+
+.container-2 .box1:hover{
+  background-color:white;
+}
+  
+  .container-2 .box1:hover h2{
+  color:#6d6875;
+}
+
+  .container-2 .box1:hover p{
+  color:black;
+}
+  .container-2 .box2:hover p{
+  color:black;
+}
+  .container-2 .box3:hover p{
+  color:black;
 }
 
 .container-2 .box2{
   border-top:1px solid rgb(163, 163, 163);
     margin:1.5rem;
+    flex:1;
+    margin-bottom:4rem;
+    padding:1rem;
 }
+.container-2 .box2 h2{
+    color:white;
+    font:bold;
+}
+
+.container-2 .box2 p{
+    color:#e2ddeb;
+}
+
+.container-2 .box2:hover{
+  background-color:white;
+}
+  
+  .container-2 .box2:hover h2{
+  color:#6d6875;
+}
+
+.container-2 .box3 h2{
+    color:white;
+    font:bold;
+}
+
+.container-2 .box3 p{
+    color:#e2ddeb;
+}
+
+.container-2 .box3:hover{
+  background-color:white;
+}
+  
+  .container-2 .box3:hover h2{
+  color:#6d6875;
+}
+
 
 .container-2 .box3{
   border-top:1px solid rgb(163, 163, 163);
     margin:1.5rem;
+    flex:1;
+    padding:1rem;
+    margin-bottom:4rem;
+    //background-color:#6d6875;
 }
 
 
@@ -357,7 +403,7 @@ input:focus + .input-label {
     height:40vh;
     border:1px solid rgb(163, 163, 163);
     margin:1rem;
-    padding:1rem;
+    padding:2rem;
 
 }
 
@@ -383,7 +429,6 @@ input:focus + .input-label {
       display:flex;
       justify-content:center;
       flex-wrap:wrap;
-      margin-top:3rem;
 }
 
 .footer-container div{
