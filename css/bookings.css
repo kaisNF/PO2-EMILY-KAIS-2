@@ -10,17 +10,16 @@
   src: url(../fonts/Poppins-Regular.ttf);
 }
 
-
-
 body{
   font-family: poppins;
-
 }
 
 .intro{
   height: 20vh;
   background-image: linear-gradient( #fff  , #E5989B 70%);
 }
+
+/*styling for nav bar*/
 nav{
   background: #6D6875;
   height: 80px;
@@ -63,17 +62,19 @@ a.active, a:hover{
   color: #E5989B;
   transition: .5s;
 }
+/*end of navigation bar styling */
+
 /* styling the content on the page */
-.service-list h1{
+.booking-list h1{
   font-size: 3rem;
   text-align: center;
   margin-bottom: 5rem;
   text-decoration: underline #E5989B;
 }
-.service-list{
+.booking-list{
   padding: 3em;
 }
-.service-list .cart{
+.booking-list .cart{
   background-color:#fff;
   border-radius: 10px;
   padding: 1em;
@@ -116,7 +117,7 @@ a.active, a:hover{
   background: #E5989B;
   transition: .5s;
 }
-.service-container{
+.booking-container{
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +128,7 @@ a.active, a:hover{
   width: 70%;
   height: auto;
 }
-.service-container .cart{
+.booking-container .cart{
   position: relative;
   width: 40rem;
   padding: 4rem;
@@ -158,6 +159,7 @@ a.active, a:hover{
 }
 
 
+/*footer styling*/
 .footer-container{
       background-color:#6d6875;
       padding:2rem;
@@ -216,6 +218,9 @@ a.active, a:hover{
     transition:all 0.4s ease-out;
 }
 
+/*end of footer styling*/
+
+/*responsiveness for footer*/
 @media(max-width:1024px)    {
 .footer-container{
 
@@ -233,8 +238,9 @@ a.active, a:hover{
 
 }
 
+/*end of responsiveness footer styling*/
 
-/* put the nav links in the center when the links break into a new line */
+/*responsiveness for nav bar*/
 @media(max-width:1024px) {
   nav {
     justify-content: center;
@@ -242,3 +248,4 @@ a.active, a:hover{
   }
 }
 
+/* end of responsiveness for nav bar*/
