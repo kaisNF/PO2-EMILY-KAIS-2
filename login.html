@@ -6,18 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home page</title>
     <link href="css/login.css" rel="stylesheet">
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" ></script> -->
-    <!-- <link href="css/main.css" rel="stylesheet"> -->
-
 </head>
 
 <body>
     <header>
         <nav>
-            <!-- <input type="checkbox" id="check"> TO FIXResponsive java logo issue 
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label> -->
             <label class="logo">Auxiliary<a id="Logodot">.</a></label>
             <ul>
                 <li><a class="active" href="home.html">Home</a></li>
@@ -28,57 +21,42 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div id="left">
-            <h1 class="welcome">Welcome to AUXILIARY<a id="dot">.</a></h1>
+ 
+        <div class="container-1">
+            <h1 class="welcome">Welcome to Auxiliary.</h1>
+            
+            <div class = "item-1">
             <p> Hello and Welcome to Auxiliary! Happy to have you here so let's get you started by creating you an
                 account!
             </p>
-            <br> <!-- Issue with margin to fix for now used the br -->
-            <br>
-            <div class="center">
-                <a href="#" class="btn" id="show-signup">Sign up</a><br>
-                <br>
-                <p>Already have an account? <a href="#" class="login" id="show-login">Log in here!</a></p>
+            <div class = "item-2">
+                <div class = "btn">
+                <a href="signup.html" class="btn">Sign up</a>
+                </div>
+          </div>
+          
+          <div class = "item-3">
+                <p>Already have an account? <a href="login.html" class="login">Log in here!</a></p>
             </div>
         </div>
-        <div id="right">
-            <img src="img/homeTeacher.jpg" alt="Picture of chemistry professor" class="responsive">
+    <div class = "container-2">
+        <div class ="box1">
+            <h2>MATH CLASSES<h2> 
+            <p>Classes curated and developed by the industry's best talent, bringing results through innovation. <p>
+            <p>Open Daily 8AM - 11PM<p>
         </div>
+        <div class ="box2">
+            <h2>ENGLISH CLASS<h2>
+            <p>Performance at its highest level with renowned teachers. Drive for success with Auxiliary at our top locations.<p>
+            <p>Open Daily 7AM - 6PM<p>
+        </div>
+         <div class ="box3">
+             <h2>BOOK WITH US<h2> 
+            <p>Get exclusive access to our booking rooms catered to your everyday needs. Bookings by the hour. <p>
+            <p>Open Daily 11AM - 8PM<p>
+        </div>
+        </div>  
     </div>
-    <!-- <div class="popup">
-        <div class="close-btn">&times;
-            <div class="form">
-                <h2>Sign up</h2>
-                <div class="form-element">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Enter email">
-                </div>
-                <div class="form-element">
-                    <label for="email">Password</label>
-                    <input type="password" id="password" placeholder="Enter password">
-                </div>
-                <div class="form-element">
-                    <label for="email">Remember me</label>
-                    <input type="checkbox" id="remember-me">
-                </div>
-                <div class="form-element">
-                    <button>Sign in</button>
-                </div>
-                <div class="form-element">
-                    <a href="#">Forgot password?</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <script>
-        document.querySelector("#show-login").addEventListener("click",function() {
-            document.querySelector(".popup").classList.add("active"); 
-        });
-        document.querySelector('.popup .close-btn').addEventListener("click",function() {
-            document.querySelector(".popup").classList.remove("active"); 
-        });
-    </script> -->
     <div class="popup">
         <div class="form">
             <h2>Log in</h2>
@@ -105,9 +83,26 @@
         </div>
     </div>
 
-    <footer class="intro">
-
-    </footer>
+     <!--the footer -->
+<footer class="footer-container"> <!--flex box container for footer-->
+    <div class "footer-link-1"> <!--item 1 of the flex box container-->
+        <h4>Our Inspiration</h4>
+        <a href="index2.html">Completed Style Guide</a>
+    </div>
+    <div class "footer-link-2"> <!--item 2 of the flex box container-->
+        <h4>Our Sources</h4>
+        <a href="index2.html#citations">Citation Web Page</a>
+    </div>
+    <div class "footer-link-3"> <!--item 3 of the flex box container-->
+        <h4>Our Collaboration</h4>
+        <a href="https://github.com/kaisNF/PO2-EMILY-KAIS-2">Link to Git Repository</a>
+    </div>
+    <div class "footer-email-form"> <!--item 4 of the flex box container-->
+        <h4>Join our Newsletter!</h4> 
+        <input type = "email" placeholder = "Enter your email address" id = "footer-email">
+        <input type = "submit" value = "Sign up" id = "footer-email-btn">
+    </div>
+</footer>
 </body>
 
 </html>
