@@ -21,8 +21,10 @@ body {
 /* Navigation bar styling */
 nav {
   background: #6d6875;
-  height: 80px;
   width: 100%;
+   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 label.logo {
   color: #fff;
@@ -39,6 +41,9 @@ label.logo {
 nav ul {
   float: right;
   margin-right: 20px;
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -81,7 +86,7 @@ th {
   text-align: left;
   padding: 5px;
   color: #fff;
-  background-color: #1f1a38;
+  background-color: #6d6875;
   font-weight: normal;
 }
 td {
@@ -111,7 +116,7 @@ h2 {
   justify-content: flex-end;
 }
 .total-price table {
-  border-top: 3px solid #7b506f;
+  border-top: 3px solid #6d6875;
   width: 30%;
   /* max-width: 250px; */
 }
@@ -125,7 +130,7 @@ h2 {
   align-items: center;
   padding: 25px;
   min-height: 100vh;
-  background: #1f1a38;
+  background: #6d6875;
 }
 
 .checkout_container form {
@@ -156,7 +161,7 @@ h2 {
   width: 100%;
   padding: 12px;
   font-size: 17px;
-  background: #1f1a38;
+  background: #6d6875;
   color: #fff;
   margin-top: 5px;
   cursor: pointer;
@@ -181,7 +186,7 @@ div.container {
   align-items: flex-start;
   justify-content: flex-start;
   margin-top: 2rem;
-  border: 1rem solid #7b506f3e;
+  border: 1rem solid #6d6875;
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -332,10 +337,11 @@ input:focus + .input-label {
 .input-underlined > input:focus {
   border-color: var(--color-interaction);
 }
-@media (max-width: 1030px){
-  nav ul li a{
-      color: #000000;
-      font-size: 19px;
+
+/*responsiveness for nav bar*/
+@media(max-width:1024px) {
+  nav {
+    justify-content: center;
+     height: 10rem;
   }
 }
-
