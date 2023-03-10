@@ -155,8 +155,9 @@ a.active, a:hover{
 }
 
 .btn:hover{
-  background: #ffffff;
+  background: #E5989B;
   transition: .5s;
+  color:white;
 }
 .btn a{
   text-decoration: none;
