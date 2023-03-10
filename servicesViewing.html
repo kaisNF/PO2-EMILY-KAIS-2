@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Booking Viewing Page</title>
 
-    <link href="css/bookingviewing.css" rel="stylesheet">
+    <link href="css/viewing.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+      <!--header-->
     <header>
-        <nav>
+        <nav> <!--the header contains the links to all of our pages-->
             <label class="logo">Auxiliary<a id="dot">.</a></label>
             <ul>
                 <li><a href="home.html">HOME</a></li>
@@ -25,32 +25,27 @@
         </nav>
     </header>
 
-        <div class="bodycontainer">
-
-            <div class="column1">
-
-
-                    
+        <div class="bodycontainer"> <!--flex container containing all content in the book viewing page-->
+            
+            <div class="column1"> <!--first set of items within the the flex container-->     
+                   
                     <div class = "product-images">    
                     <img src="img/math4.jpg" alt="image of a set of kids collaborating together to solve math questions during class " class="images">
                     <img src="img/math2.jpg" alt="image of a group of kids raising their hand up as the teacher asks someone to solve a question on the board" class="images">
                     <img src="img/math3.jpg" alt="image of a zoomed up image of the chalkboard filled with algebraic questions" class="images">
                     </div>
+                    
+            </div> <!--end of first item//container of the flex container-->
 
-            </div> <!--end of column one-->
-
-            <div class="column2">
-             
-                <div class="content">
-
-                    <div class ="container2">
-                    <h2>Math Classes</h2> 
-                    <p id = pricing> $52</p>
+        <div class="column2"> <!--second item of the flex container-->
+                <div class="content"> <!--first item of column2 container/flex box that contains all content of the service-->
+                    
+                    <div class ="container2"> <!--first set of information in context flex box-->
+                        <h2>Math Classes</h2> 
+                        <p id = pricing> $52</p>
                     </div>
-            
 
-
-                    <h3>Description</h3>
+                    <h3>Description</h3> <!--second set of information in context flex box-->
                     <p>
                         We offer a wide range of courses designed to help students develop a solid foundation in math.
                         The classes cover various topics such as arithmetic, geometry, algebra, and problem-solving.
@@ -62,40 +57,32 @@
                         their math skills and build a strong foundation for future academic success.
                     </p>
                     <a class="btn" href="checkout.html">ADD TO CART</a>
-
                 
-                </div> <!--end of content-->
-                <hr>
-                <div class = "reviews"> 
+                </div> <!--end of content--><hr>
+              <div class = "reviews"> <!--2nd item of the column2 container/flex box that allows users to send a review to the company-->
 
                 <h3>Write a Review</h3>
 
                     <form>
                   <div class = "container3">
-
-                    
-
-                      
-
-                        <!--<div class = "personal-Info-Container">  -->  
                             <label for = "firstName">First Name: </label>
                             <input type = "text" placeholder = "John" id = "firstName" name = "fName">
+                          
+                        
                             <label for = "lastName" > Last Name: </label>
                             <input type = "text" placeholder = "Doe" id = "lastName" name = "lName">
-                        <!--</div> -->
-
-
-
+               
                         <label for = "title">Review Title(required):</label>
                         <input type = "text" placeholder = "Headline or summary of your review" id = "title" name = "Rtitle" required>
                         <label for = "review">Review (required):</label>
                         <input type = "text" placeholder = 
                         "Write your review here. It must be more than 50 characters long. Consider your experience" id = "review" name = "rview" required>
-    
+
                          
                         <input type = "submit" id = "sub" value = "Submit">                
                     </div>
                     </form>
+
                 </div>   <!--end of review-->      
 
             </div> <!--end of column two -->

@@ -19,6 +19,7 @@ body {
   height: 20vh;
   background-image: linear-gradient(#fff, #e5989b 70%);
 }
+
 /* Navigation bar styling */
 nav {
   background: #6d6875;
@@ -60,11 +61,11 @@ nav ul li a {
   font-size: 19px;
 }
 
-a.active,
-a:hover {
+a.active, a:hover {
   color: #e5989b;
   transition: 0.5s;
 }
+
 /* Styling the containers of the content on the page */
 .bodycontainer {
   display: flex;
@@ -124,30 +125,12 @@ a:hover {
   font-size: 2.2rem;
 }
 
-/* Making the page responsive by shrinking and expanding + styling of the columns */
-.bodycontainer .column2 .another {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid rgb(163, 163, 163);
-  padding: 0rem;
-}
-
-.bodycontainer .column2 .another .item-1 {
-  font-size: 1rem;
-  border-right: 1px solid rgb(164, 164, 164);
-}
-
-.bodycontainer .column2 .another .item-2 {
-  font-size: 1rem;
-  border-left: 1px solid rgb(164, 164, 164);
-}
-
 .bodycontainer .column2 p {
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
+  margin-left:1rem;
 }
+
 
 .bodycontainer .column2 h3 {
   font-size: 1.5rem;
@@ -232,6 +215,7 @@ a:hover {
   text-align: center;
 }
 
+/*footer styling*/
 .footer-container {
   background-color: #6d6875;
   padding: 2rem;
@@ -299,6 +283,8 @@ a:hover {
   }
 }
 
+/* Responsivness for footer */
+
 @media (max-width: 1024px) {
   .footer-container {
     height: 35vh;
@@ -310,3 +296,6 @@ a:hover {
     height: 50vh;
   }
 }
+
+
+/* End of Responsivness for footer */

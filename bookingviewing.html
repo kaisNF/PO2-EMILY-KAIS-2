@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Booking Viewing Page</title>
 
-    <link href="css/bookingviewing.css" rel="stylesheet">
+    <link href="css/viewing.css" rel="stylesheet">
 
 </head>
 
@@ -26,27 +26,26 @@
     </header>
 
         
-        <div class="bodycontainer">
-            <div class="column1">
+        <div class="bodycontainer"> <!--flex container containing all content in the book viewing page-->
+            
+            <div class="column1"> <!--first set of items within the the flex container-->
 
                     <div class = "product-images">    
                         <img src="img/music1.jpeg" alt="image of a recording studio to record yourself and your music at Auxiliary" class="images">
                         <img src="img/music2.jpeg" alt="image of an aspiring artist tuning his guitar in one of the music studios available at Auxiliary" class="images">
                         <img src="img/music3.jpeg" alt="Zoomed in image of the recording equipment available at Auxiliary " class="images">
                     </div>
-            </div> <!--end of column one-->
+            </div> <!--end of first item//container of the flex container-->
 
-            <div class="column2">
-                <div class="content">
-
-                    <div class ="container2">
-                    <h2>MUSIC STUDIO</h2> 
-                    <p id = pricing> $27/hr</p>
+            <div class="column2"> <!--second item of the flex container-->
+                <div class="content"> <!--first item of column2 container/flex box that contains all content of the service-->
+                    
+                    <div class ="container2"> <!--first set of information in context flex box-->
+                        <h2>MUSIC STUDIO</h2> 
+                        <p id = pricing> $27/hr</p>
                     </div>
             
-
-
-                    <h3>Description</h3>
+                    <h3>Description</h3> <!--second set of information in context flex box-->
                     <p>
                        We provide studios available to eager musicians looking for a place to record their music. 
                        Bookings at Auxiliary cover a wide range of necessities to promote individual growth and foster
@@ -56,12 +55,11 @@
                        for collaboration with other fellow musicians. 
                        Bookings go by the hour.
                     </p>
-                 
                     <a class="btn" href="checkout.html">ADD TO CART</a>
 
                 </div> <!--end of content--><hr>
 
-                <div class = "reviews">
+            <div class = "reviews"> <!--2nd item of the column2 container/flex box that allows users to send a review to the company-->
 
                 <h3>Write a Review</h3>
 
@@ -74,8 +72,6 @@
                             <label for = "lastName" > Last Name: </label>
                             <input type = "text" placeholder = "Doe" id = "lastName" name = "lName">
                
-
-
                         <label for = "title">Review Title(required):</label>
                         <input type = "text" placeholder = "Headline or summary of your review" id = "title" name = "Rtitle" required>
                         <label for = "review">Review (required):</label>
@@ -86,6 +82,7 @@
                         <input type = "submit" id = "sub" value = "Submit">                
                     </div>
                     </form>
+
                 </div>   <!--end of review-->      
 
             </div> <!--end of column two -->

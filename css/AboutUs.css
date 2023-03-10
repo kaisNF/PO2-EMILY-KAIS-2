@@ -72,10 +72,11 @@ a.active, a:hover{
 
 .content h2{
   font: bold;
-  text-shadow: 3px 3px #6d687567;
   box-sizing: border-box;
   margin-bottom: 2.5rem;
+  font-size:2rem;
   text-align: center;
+text-decoration: underline #E5989B;
 }
 
 .content h3{
